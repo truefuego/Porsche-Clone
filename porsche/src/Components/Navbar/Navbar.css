@@ -1,0 +1,28 @@
+.nav-bar{
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 58px;
+    padding-right: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: 17.2px;
+    background-size: cover;
+    /* border: 1px solid black; */
+}
+
+.logo-small{
+    width: 40px;
+    height: 45px;
+    background-size: contain;
+}
+
+.empty{
+    padding-left: 44px;
+    padding-right: 44px;
+}
