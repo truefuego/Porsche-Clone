@@ -1,4 +1,49 @@
+
 .carousel-image{
     width: 100%;
-    
+}
+
+.carousel-card-content{
+    top: calc(75%);
+    left: calc(6%);
+    display: flex;
+    position: absolute;
+}
+
+.carousel-card-content-image{
+    margin-top: 24px;
+    margin-right: 6px;
+    width: 16px;
+    height: 26px;
+}
+
+.carousel-card-content-text{
+    margin: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-card-content-title{
+    font-size: 48px;
+    font-family:'PorscheNext Bold';
+    color: #fff;
+    margin:0;
+}
+
+.carousel-card-content-tagline{
+    font-size: 24px;
+    font-family:'PorscheNext Bold';
+    color: #fff;
+    margin:0;
+}
+
+
+.carousel-card-content-text:hover{
+    .carousel-card-content-tagline {
+        color: #d5001c;
+    }
+    .carousel-card-content-title {
+        color: #d5001c;
+    }
 }
