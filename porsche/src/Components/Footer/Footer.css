@@ -121,6 +121,8 @@
     }
 }
 .footer-horizontal-line-lower{
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #494e51;
 }
 
@@ -155,4 +157,26 @@
     cursor: pointer;
     text-decoration: none;
     color: #d5001c;
+}
+
+.region-selector-area{
+    display: flex;
+    gap: 10px;
+}
+
+.region-selector{
+    color: #fff;
+    font-family: 'PorscheNext Regular';
+    border: none;
+    border-radius: 0;
+    padding: 12px;
+    padding-right: 140px;
+    background-color: #313639;
+}
+
+.region-selector-option{   
+    margin: 10px;
+    line-height: 24px;
+    background-color: #fff;
+    color: #000;
 }
