@@ -1,0 +1,53 @@
+.porsche-social{
+    width: 86%;
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.porsche-social-header{
+    font-size: 40px;
+    font-family: 'PorscheNext SemiBold';
+}
+
+.porsche-social-grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 4px;
+    grid-column-gap: 8px;
+}
+
+.porsche-social-media{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.porsche-social-small{
+    max-height: 210px;
+}
+
+.porsche-social-large{
+    max-height: 430px;
+}
+
+.porsche-social-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.porsche-social-item{
+    position: relative;
+}
+
+.porsche-social-item-logo{
+    position: absolute;
+    bottom: 6px;
+    width: 50px;
+    height: 50px;
+    right: 1px;
+}

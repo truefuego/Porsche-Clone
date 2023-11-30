@@ -40,3 +40,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-red ,.hover-blue ,.hover-light-blue{
+  background-color: #313639;
+}
+
+.hover-red:hover{
+  background-color: #cd242b;
+}
+
+.hover-light-blue:hover{
+  background-color: #55acee;
+}
+
+.hover-blue:hover{
+  background-color: #0274b3;
+}
+
+.constant-blue{
+  background-color: #0274b3;
+}
+
+.constant-light-blue{
+  background-color: #55acee;
+}
+
+.constant-red{
+  background-color: #cd242b;
+}
+
+.constant-black{
+  background-color: #000;
+}
+
+
+.light-hover-blue{
+  background-color: #0274b3;
+}
+
+.light-hover-blue:hover{
+  background-color: #0274b3;
+  opacity: .7;
+}
+
+.light-hover-light-blue{
+  background-color: #55acee;
+}
+
+.light-hover-light-blue:hover{
+  background-color: #55acee;
+  opacity: .7;
+}
+
+.light-hover-red{
+  background-color: #cd242b;
+}
+
+.light-hover-red:hover{
+  background-color: #cd242b;
+  opacity: .7;
+}
+
+.light-hover-black{
+  background-color: #000;
+}
+
+.light-hover-black:hover{
+  background-color: #000;
+  opacity: .7;
+}

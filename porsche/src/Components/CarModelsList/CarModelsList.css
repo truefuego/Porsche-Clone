@@ -1,0 +1,74 @@
+.car-models-list{
+    width: 86vw;
+    padding-bottom: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33.33%;
+    overflow-x: hidden;
+}
+
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+.car-models-list-header{
+    margin-top: 36px;
+    margin-left: 104px;
+    font-size: 40px;
+    font-family: 'PorscheNext SemiBold';
+}
+
+.car-models-list-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-models-list-wrapper-pointer {
+    margin: 10px;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.1);
+    display: flex;
+}
+
+.car-models-list-wrapper-pointer:hover {
+    background: #d5001c;
+    border-radius: 0;
+    .car-models-list-wrapper-pointer-image{
+        width: 20px;
+        filter: invert();
+    }
+
+}
+
+.car-models-list-wrapper-pointer-image{
+    pointer-events: none;
+    width: 20px;
+}
+
+.car-models-poniter {
+    padding: 20px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.car-model-list-pointer{
+    padding: 4px;
+    border-radius: 4px;
+    background: #e3e4e4;
+}
+
+.car-model-list-pointer-active{
+    padding: 4px;
+    border-radius: 4px;
+    background: #d5001c;
+}

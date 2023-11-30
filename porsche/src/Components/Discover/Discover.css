@@ -1,0 +1,51 @@
+.discover{
+    width: 86%;
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.discover-header{
+    font-size: 40px;
+    font-family: 'PorscheNext SemiBold';
+}
+
+.discover-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.discover-card{
+    width: 100%;
+}
+
+.discover-card-image{
+    position: relative;
+    width: 100%;
+    border-bottom: 3px solid #000;
+}
+
+.discover-card-links{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    gap: 6px;
+}
+
+.discover-card-links img{
+    width: 6px;
+    height: 12px;
+}
+
+.discover-card-links-text{
+    margin: 0;
+    font-family: 'PorscheNext Regular';
+}
+
+.discover-card:hover{
+    .discover-card-links-text{
+        color: #d5001c;
+    }
+    .discover-card-image{
+        border-bottom: 3px solid #d5001c;
+    }
+}

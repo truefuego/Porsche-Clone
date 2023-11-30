@@ -1,0 +1,45 @@
+.shopping-tools-card{
+    position: relative;
+    width: 100%;
+}
+
+.shopping-tools-image{
+    width: 100%;
+}
+
+.shopping-tools-image-long{
+    width: 100%;
+}
+
+.shopping-tools-info{
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+    gap: 4px;
+}
+
+.shopping-tools-info p{
+    margin: 0;
+    font-family: 'PorscheNext SemiBold';
+    font-size: 20px;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+
+.shopping-tools-info img{
+    width: 8px;
+    height: 14px;
+}
+
+.shopping-tools-card:hover{
+    .shopping-tools-info p{
+        margin: 0;
+        font-family: 'PorscheNext SemiBold';
+        font-size: 20px;
+        color: #d5001c;
+        transition: 200ms ease-in-out;
+    }
+}

@@ -1,0 +1,15 @@
+.shopping-tools{
+    margin-top: 52px;
+    margin-bottom: 52px; 
+    width: 86%;
+}
+
+.shopping-tools-item-wrapper{
+    display: grid;
+    grid-template-columns: 2fr repeat(3,1fr);
+}
+
+.shopping-tools-header{
+    font-size: 40px;
+    font-family: 'PorscheNext SemiBold';
+}

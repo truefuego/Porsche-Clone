@@ -1,30 +1,12 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import './Carousel.css'
 import CarouselCard from './CarouselCard/CarouselCard'
 import Porsche_India from './Images/porsche-india.webp'
 import Timeless_Machine from './Images/timeless-machine.webp'
-import Drive_Defines_US from './Images/drive-defines-us.webp'
-import Contemporary_Dynamic_And_Urban from './Images/contemporary-dynamic-and-urban.webp'
+import Choose_Boldly from './Images/choose-boldly.webp'
+import The_One_And_Always from './Images/the-one-and-always.webp'
 import Left from '../../Assets/Images/Navigation/Left.png'
 import Right from '../../Assets/Images/Navigation/Right.png'
-
-const Cards = [
-  {
-    id: 0,
-    image: Porsche_India
-  },
-  {
-    id: 1,
-    image: Timeless_Machine
-  },
-  {
-    id: 2,
-    image: Drive_Defines_US
-  },{
-    id: 3,
-    image: Contemporary_Dynamic_And_Urban
-  }
-]
 
 const Carousel = () => {
   return (
@@ -43,10 +25,10 @@ const Carousel = () => {
           <CarouselCard image={Timeless_Machine} title={'Timeless Machine.'} tagline={'The 911 Carrera S.'} link={'https://www.porsche.com/middle-east/_india_/models/911/911-models/carrera-s/'}/>
         </div>
         <div className="carousel-item">
-          <CarouselCard image={Contemporary_Dynamic_And_Urban} title={'Contemporary, dynamic and urban.'} tagline={'The Macan T.'}/>
+          <CarouselCard image={Choose_Boldly} title={'Choose boldly.'} tagline={'The new Panamera.'}/>
         </div>
         <div className="carousel-item">
-          <CarouselCard image={Drive_Defines_US} title={'Drive defines us.'} tagline={'The Panamera 4S E-Hybrid.'}/>
+          <CarouselCard image={The_One_And_Always} title={'The one and always.'} tagline={'The new 911 S/T.'} link={'https://www.porsche.com/middle-east/_india_/models/911/911-st/911-st/'}/>
         </div>
       </div>
       <div className='carousel-buttons'>

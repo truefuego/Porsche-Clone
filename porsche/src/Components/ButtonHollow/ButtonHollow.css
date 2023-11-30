@@ -1,0 +1,28 @@
+.button-hollow{
+    display: flex;
+    border: 1px solid #fff;
+    align-items: center;
+    gap: 12px;
+}
+
+.button-hollow-image{
+    margin-left: 20px;
+    width: 8px;
+    height: 12px;
+}
+
+.button-hollow-text{
+    padding-right: 18px;
+    margin-top: 18px;
+    color: #fff;
+    font-family: 'PorscheNext Regular';
+    font-size: 14px;
+    
+}
+
+.button-hollow:hover{
+    border: 1px solid #d5001c;
+    .button-hollow-text{
+        color: #d5001c;
+    }
+}

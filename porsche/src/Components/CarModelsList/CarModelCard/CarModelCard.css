@@ -1,0 +1,46 @@
+.car-model-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-model-card-image{
+    width: 100%;
+    pointer-events: none;
+    
+}
+
+.car-model-card-button{
+    border: 0px;
+    display: flex;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    gap: 16px;
+    background: #313639;
+    align-items: center;
+    width: fit-content;
+    transition: 200ms ease-in-out;
+}
+
+.car-model-card:hover{
+    .car-model-card-button{
+        transition: 200ms ease-in-out;
+        background: #d5001c;
+    }
+}
+
+.car-model-card-button img{
+    scale: .7;
+}
+
+.car-model-card-button-find-button {
+    font-size: 15px;
+    font-family: 'PorscheNext Regular';
+    color: white;
+    align-items: center;
+    margin: 0;
+}
