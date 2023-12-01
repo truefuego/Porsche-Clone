@@ -1,4 +1,6 @@
 .menu{
+    cursor: pointer;
+    position: relative;
     display: flex;
     width: 70px;
     background: transparent;
@@ -21,6 +23,7 @@
 
 .menu-text{
     margin-top: 1px;
+    pointer-events: none;
     font-family: 'PorscheNext Thin';
     font-weight: bold;
     font-size: 15px;

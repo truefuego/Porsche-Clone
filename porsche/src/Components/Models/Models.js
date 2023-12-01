@@ -23,7 +23,7 @@ const ModelsList = [
     },
     {
         model: 'Taycan',
-        price: '16,093,000',
+        price: '16,093,000*',
         link: '',
         image: PorscheTaycan
     },

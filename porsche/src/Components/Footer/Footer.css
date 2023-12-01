@@ -169,9 +169,46 @@
     font-family: 'PorscheNext Regular';
     border: none;
     border-radius: 0;
-    padding: 12px;
-    padding-right: 140px;
+    padding: 4px;
     background-color: #313639;
+}
+
+.footer-lower-drop-up{
+    position: relative;
+    cursor: pointer;
+}
+
+.footer-lower-drop-up-controller{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.footer-lower-drop-up-image{
+    rotate: 90deg;
+    margin: 10px;
+    width: 8px;
+    height: 12px;
+}
+
+.footer-lower-drop-up-text{
+    margin: 10px;
+}
+
+.footer-lower-drop-up-content{
+    font-family: 'PorscheNext Thin';
+    overflow-y: scroll;
+    font-size: 17px;
+    max-height: 200px;
+    width: 300px;
+    bottom: 52px;
+    gap: 16px;
+    background-color: #fff;
+    z-index: 111;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
 }
 
 .region-selector-option{   
@@ -179,4 +216,9 @@
     line-height: 24px;
     background-color: #fff;
     color: #000;
+}
+
+.region-selector-option:hover{
+    cursor: pointer;   
+    color: #d5001c;
 }

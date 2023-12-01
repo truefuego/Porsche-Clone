@@ -16,7 +16,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 350px 350px;
+    grid-template-rows: 375px 375px;
 }
 
 .models-footer{

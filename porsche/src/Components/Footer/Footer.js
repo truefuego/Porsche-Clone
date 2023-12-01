@@ -8,6 +8,7 @@ import Instagram from '../../Assets/Images/Icons/instagram.png'
 import LinkedIn from '../../Assets/Images/Icons/linkedin.png'
 import Twitter from '../../Assets/Images/Icons/twitter.png'
 import Digg from '../../Assets/Images/Icons/digg.png'
+import Drop_Up_Image from '../../Assets/Images/Buttons/link-arrow-white.png'
 
 const Locations = [
   {
@@ -44,15 +45,9 @@ const Footer = () => {
   const [region,setRegion] = useState('Select a region');
   const [country,setCountry] = useState('Select a country/region');
   const [countries,setCountries] = useState([])
+  const [toggleRegionSelector,setToggleRegionSelector] = useState(false)
+  const [toggleCountrySelector,setToggleCountrySelector] = useState(false)
 
-  const handleRegionSelect = (e) => {
-    setRegion(e.target.value)
-    setCountries(Locations.find(ctr => ctr.region === e.target.value).countries)
-  }
-
-  const handleCountrySelect = (e) => {
-    setCountry(e.target.value)
-  }
   return (
     <div className='footer'>
       <div className='container-center'>
@@ -136,20 +131,30 @@ const Footer = () => {
       <div className='footer-lower'>
         <p className='footer-lower-header'>Change country/region:</p>
         <div className='region-selector-area'>
-          <select value={region} onChange={handleRegionSelect} className='region-selector'> 
-            <option value={'Select a region'} selected disabled hidden>{'Select a region'}</option>
-            {Locations.map((item) => <option className='region-selector-option' value={item.region}>{item.region}</option>)}
-          </select> 
-            <select value={country} onChange={handleCountrySelect} className='region-selector'>
-              <option value={'Select a country/region'} selected disabled hidden>{'Select a country/region'}</option>
-              {countries !== undefined && countries.map((item) => <option className='region-selector-option' value={item}>{item}</option>)}
-            </select>
+          <div className='footer-lower-drop-up'>
+            <div className='region-selector footer-lower-drop-up-controller' onClick={() => setToggleRegionSelector(!toggleRegionSelector)}>
+              <p className='footer-lower-drop-up-text'>{region}</p>
+              <img className='footer-lower-drop-up-image' src={Drop_Up_Image} alt='link'/>
+            </div>
+            <div className='footer-lower-drop-up-content'>
+              {toggleRegionSelector && Locations.map((item) => <p key={item.region} className='region-selector-option' onClick={() => {setRegion(item.region);setCountries(Locations.find(ctr => ctr.region === item.region).countries);setToggleRegionSelector(!toggleRegionSelector)}}>{item.region}</p>)}
+            </div>
+          </div>
+          <div className='footer-lower-drop-up'>
+            <div className='region-selector footer-lower-drop-up-controller' onClick={() => setToggleCountrySelector(!toggleCountrySelector)}>
+              <p className='footer-lower-drop-up-text'>{country}</p>
+              <img className='footer-lower-drop-up-image' src={Drop_Up_Image} alt='link'/>
+            </div>
+            {region !== 'Select a region' && (<div className='footer-lower-drop-up-content'>
+              {toggleCountrySelector && countries.map((item) => <p key={item} className='region-selector-option' onClick={() => {setCountry(item);setToggleCountrySelector(!toggleCountrySelector)}}>{item}</p>)}
+            </div>)}
+          </div>
         </div>
         <div className='footer-horizontal-line-lower'/>
         <div className='footer-last-line-area'>
           <p className='footer-last-line-text'>© 2023 Porsche India - SKODA AUTO Volkswagen India Private Limited - India.<u className='footer-last-line-underline'>Legal notice.</u><u className='footer-last-line-underline'>Cookie & Privacy Policy.</u><u className='footer-last-line-underline'>Corporate Governance.</u><u className='footer-last-line-underline'>Open Source Software Notice.</u><u className='footer-last-line-underline'>Whistleblower System.</u><u className='footer-last-line-underline'>Business and Human Rights.</u></p>
         </div>
-        </div>
+      </div>
     </div>
   )
 }

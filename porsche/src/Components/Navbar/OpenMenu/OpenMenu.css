@@ -1,0 +1,161 @@
+.open-menu{
+    display: flex;
+}
+
+.open-menu-left-area{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    width: 26vw;
+    height: 100vh;
+    gap: 10px;
+    padding-top: 96px;
+}
+
+.open-menu-left-button{
+    cursor: pointer;
+    width: 78%;
+    font-family: 'PorscheNext Regular';
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    transition: 200ms ease-in-out;
+}
+
+.open-menu-left-button-text{
+    margin: 10px;
+}
+
+.open-menu-left-button:hover{
+    transition: 200ms ease-in-out;
+    background-color: rgba(148, 149, 152, 0.18);
+}
+
+.open-menu-left-button-image{
+    margin: 20px;
+    width: 7px;
+    height: 15px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.open-menu-right-area{
+    width: 26vw;
+    height: 100vh;
+    background-color: #EEEFF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26vw;
+    height: 100vh;
+    gap: 10px;
+    padding-top: 96px;
+}
+
+.is-clicked{
+    transition: 200ms ease-in-out;
+    background-color: rgba(148, 149, 152, 0.18);
+}
+
+.open-menu-right-content{
+    display: flex;
+    flex-direction: column;
+    font-family: 'PorscheNext Regular';
+    gap: 8px;
+}
+
+.open-menu-right-content-text-area{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.open-menu-right-content-image{
+    transition: 400ms ease-in-out;
+}
+
+.open-menu-right-content-text{
+    width: fit-content;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 10px;
+    font-family: 'PorscheNext Regular';
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.open-menu-right-content-text:hover{
+    background-color: rgba(148, 149, 152, 0.18);
+    border-radius: 4px;
+}
+
+.open-menu-right-content-image:hover{
+    transition: 400ms ease-in-out;
+    scale: 1.1;
+    border-radius: 4px;
+    background-color: rgba(148, 149, 152, 0.18);
+}
+
+.open-menu-find-a-dealer-zip-code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 54px;
+    font-family: 'PorscheNext Regular';
+    font-size: 16px;
+    color: rgb(107, 109, 112);
+    border: 2px solid rgb(107, 109, 112) !important;
+    border-radius: 4px;
+}
+
+.open-menu-find-a-dealer-zip-code input{
+    width: 80%;
+    background-color: transparent;
+    margin: 10px;
+    border: none;
+}
+
+.open-menu-find-a-dealer-zip-code input:focus{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.open-menu-find-a-dealer-zip-code img{
+    padding-top: 4px;
+    margin: 10px;
+    width: 20px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.open-menu-find-a-dealer-zip-code img:hover{
+    background-size: contain;
+    background-color: rgba(148, 149, 152, 0.18);
+}
+
+.open-menu-find-a-dealer-location{
+    cursor: pointer;
+    display: flex;
+    width: 300px;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: 'PorscheNext Regular';
+}
+
+.open-menu-find-a-dealer-location:hover{
+    background-color: rgba(148, 149, 152, 0.18);
+}
+
+.open-menu-find-a-dealer-location p{
+    margin: 0;
+    padding: 10px;
+}
