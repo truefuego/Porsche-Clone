@@ -10,8 +10,8 @@ import A911 from './Assets/a-911.webp'
 import JoinThe3rd from './Assets/join-the-3rd.mp4'
 import OnlineShop from './Assets/online-shop.webp'
 import LinkArrowWhite from '../../Assets/Images/Buttons/link-arrow-white.png'
-import InstaGram from '../../Assets/Images/Icons/instagram.png'
-import FaceBook from '../../Assets/Images/Icons/facebook.png'
+import InstaGram from '../../Assets/Images/Icons/instagram-logo.png'
+import FaceBook from '../../Assets/Images/Icons/facebook-logo.png'
 
 const PorscheSocial = () => {
   return (
