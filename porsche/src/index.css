@@ -9,31 +9,31 @@ body {
 
 @font-face {
   font-family: 'PorscheNext Regular';
-  src: url(./Fonts/PorscheNext-Regular.otf);
+  src: url(./Assets/Fonts/PorscheNext-Regular.otf);
 }
 @font-face {
   font-family: 'PorscheNext SemiBold';
-  src: url(./Fonts/PorscheNext-SemiBold.otf);
+  src: url(./Assets/Fonts/PorscheNext-SemiBold.otf);
 }
 @font-face {
   font-family: 'PorscheNext Bold';
-  src: url(./Fonts/PorscheNext-Bold.ttf);
+  src: url(./Assets/Fonts/PorscheNext-Bold.ttf);
 }
 @font-face {
   font-family: 'PorscheNext Italic';
-  src: url(./Fonts/PorscheNext-Italic.ttf);
+  src: url(./Assets/Fonts/PorscheNext-Italic.ttf);
 }
 @font-face {
   font-family: 'PorscheNext Thin';
-  src: url(./Fonts/PorscheNext-Thin.otf);
+  src: url(./Assets/Fonts/PorscheNext-Thin.otf);
 }
 @font-face {
   font-family: 'PorscheNext Bold Italic';
-  src: url(./Fonts/PorscheNext-BoldItalic.otf);
+  src: url(./Assets/Fonts/PorscheNext-BoldItalic.otf);
 }
 @font-face {
   font-family: 'PorscheNext Thin Italic';
-  src: url(./Fonts/PorscheNext-ThinItalic.otf);
+  src: url(./Assets/Fonts/PorscheNext-ThinItalic.otf);
 }
 
 code {

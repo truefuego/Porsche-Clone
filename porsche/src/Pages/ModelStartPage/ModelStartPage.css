@@ -1,0 +1,81 @@
+.model-start-grid{
+    width: 86%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 60px;
+}
+
+
+.porsche-car-configurator{
+    width: 86%;
+    font-family: 'PorscheNext Regular';
+}
+
+.porsche-car-configurator-header{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-size: 26px;
+    font-family: 'PorscheNext SemiBold';
+}
+
+.model-start-navigator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #950014;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.model-start-navigator:hover{
+    background-color: #313639;
+}
+
+.model-start-navigator img{
+    scale: .8;
+}
+
+.porsche-car-configurator-drop-down{
+    position: relative;
+    display: inline-block;
+}
+
+.porsche-car-configurator-drop-down-content{
+    position: absolute;
+    display: none;
+}
+
+.model-start-more-about{
+    display: flex;
+    width: 86%;
+    font-family: 'PorscheNext Regular';
+    gap: 15px;
+}
+
+.model-start-more-about p{
+    margin: 0;
+}
+
+.model-start-more-about-info{
+    display: flex;   
+    align-items: center;
+    gap: 8px;
+}
+
+.model-start-more-about-info img{
+    width: 12px;
+    height: 12px;
+}
+
+.model-start-more-about-info p{
+    margin: 0;
+}
+
+.model-start-more-about p:hover{
+    cursor: pointer;
+    color: #d5001c;
+}

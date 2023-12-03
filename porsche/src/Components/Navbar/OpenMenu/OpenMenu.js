@@ -17,34 +17,34 @@ const OpenMenu = () => {
         <div className='open-menu-left-area'>
             <div className={`open-menu-left-button ${clicked === "Models"? 'is-clicked' : ''}`} onClick={() => setClicked('Models')}>
                 <p className='open-menu-left-button-text'>Models</p>
-                <img className='open-menu-left-button-image' src={LinkArrow}/>
+                <img className='open-menu-left-button-image' src={LinkArrow} alt='link'/>
             </div>
             <div className={`open-menu-left-button ${clicked === "Vehicle Purchase"? 'is-clicked' : ''}`} onClick={() => setClicked('Vehicle Purchase')}>
                 <p className='open-menu-left-button-text'>Vehicle Purchase</p>
-                <img className='open-menu-left-button-image' src={LinkArrow}/>
+                <img className='open-menu-left-button-image' src={LinkArrow} alt='link'/>
             </div>
             <div className={`open-menu-left-button ${clicked === "Services"? 'is-clicked' : ''}`} onClick={() => setClicked('Services')}>
                 <p className='open-menu-left-button-text'>Services</p>
-                <img className='open-menu-left-button-image' src={LinkArrow}/>
+                <img className='open-menu-left-button-image' src={LinkArrow} alt='link'/>
             </div>
             <div className={`open-menu-left-button ${clicked === "Experience"? 'is-clicked' : ''}`} onClick={() => setClicked('Experience')}>
                 <p className='open-menu-left-button-text'>Experience</p>
-                <img className='open-menu-left-button-image' src={LinkArrow}/>
+                <img className='open-menu-left-button-image' src={LinkArrow} alt='link'/>
             </div>
             <div className={`open-menu-left-button ${clicked === "Find a Dealer"? 'is-clicked' : ''}`} onClick={() => setClicked('Find a Dealer')}>
                 <p className='open-menu-left-button-text'>Find a Dealer</p>
-                <img className='open-menu-left-button-image' src={LinkArrow}/>
+                <img className='open-menu-left-button-image' src={LinkArrow} alt='link'/>
             </div>
         </div>
         <div className='open-menu-right-area'>
             {clicked === 'Models' && (
                 <div className='open-menu-right-content'>
-                    <img className='open-menu-right-content-image' src={Porsche718}/>
-                    <img className='open-menu-right-content-image' src={Porsche911}/>
-                    <img className='open-menu-right-content-image' src={PorscheTaycan}/>
-                    <img className='open-menu-right-content-image' src={PorschePanamera}/>
-                    <img className='open-menu-right-content-image' src={PorscheMacan}/>
-                    <img className='open-menu-right-content-image' src={PorscheCayenne}/>
+                    <img className='open-menu-right-content-image' src={Porsche718} alt='Porsche718'/>
+                    <img className='open-menu-right-content-image' src={Porsche911} alt='Porsche911'/>
+                    <img className='open-menu-right-content-image' src={PorscheTaycan} alt='PorscheTaycan'/>
+                    <img className='open-menu-right-content-image' src={PorschePanamera} alt='PorschePanamera'/>
+                    <img className='open-menu-right-content-image' src={PorscheMacan} alt='PorscheMacan'/>
+                    <img className='open-menu-right-content-image' src={PorscheCayenne} alt='PorscheCayenne'/>
                 </div>
             )}
             {clicked === 'Vehicle Purchase' && (

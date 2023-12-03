@@ -1,0 +1,25 @@
+.button-colored{
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 8px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.button-colored p{
+    margin: 0;
+    font-family: 'PorscheNext Regular';
+    font-size: 14px;
+    color: #fff;
+}
+
+.button-colored img{
+    object-fit: cover;
+    object-position: center center;
+    width: 6px;
+    height: 12px;
+}

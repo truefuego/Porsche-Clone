@@ -31,10 +31,10 @@ const Navbar = () => {
             }
             <div className='empty' />
         </div>
-        {!openMenu && (
+        {openMenu && (
             <div className='menu-open'>
                 <OpenMenu />
-                <div className='back-button' onClick={() => toggleOpenMenu()}><img className='back-button-image' src={BackButton}/></div>
+                <div className='back-button' onClick={() => toggleOpenMenu()}><img className='back-button-image' src={BackButton} alt='back'/></div>
             </div>
         )}
     </div>

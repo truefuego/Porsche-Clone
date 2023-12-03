@@ -1,0 +1,44 @@
+.model-start-model-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.model-start-model-card img{
+    width: 100%;
+}
+
+.model-start-model-card-info{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.model-start-model-card-info img{
+    width: 6px;
+    height: 12px;
+}
+
+.model-start-model-card-info p{
+    font-family: 'PorscheNext Regular';
+    margin: 0;
+    padding: 0;
+}
+
+.model-start-model-card:hover{
+    color: #d5001c;
+    .model-start-model-card-separator{
+        height: 5px;
+        width: 96%;
+        background-color: #d5001c;
+        transition: 200ms ease-in-out
+    }
+}
+
+.model-start-model-card-separator{
+    height: 5px;
+    width: 96%;
+    background-color: transparent;
+    transition: 200ms ease-in-out
+}
