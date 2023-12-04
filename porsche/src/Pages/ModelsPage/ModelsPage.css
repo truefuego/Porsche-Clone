@@ -1,0 +1,19 @@
+.model-page-porsche-car-configurator{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.porsche-car-configurator-filter-buttons{
+    width: 14.33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.porsche-car-configurator-vertical-divider{
+    border: 1px solid #e3e4e4;
+}
+
+.porsche-car-configurator-models{
+    width: 76%;
+}
