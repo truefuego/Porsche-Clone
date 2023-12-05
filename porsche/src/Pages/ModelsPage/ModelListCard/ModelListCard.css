@@ -1,0 +1,39 @@
+.model-list-card{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'PorscheNext Regular';
+    gap: 2px;
+}
+
+.model-list-card-image{
+    width: 100%;
+}
+
+.model-list-card-name{
+    margin: 0;
+    font-family: 'PorscheNext Thin';
+    font-weight: 600;
+}
+
+.model-list-card-new{
+    color: #d5001c;
+    margin: 0;
+    font-family: 'PorscheNext Thin';
+    font-weight: 600;
+}
+
+.model-list-card-price{
+
+    margin: 0;
+    font-family: 'PorscheNext Thin';
+    font-weight: 600;
+}
+
+.model-list-card-footnote{
+    font-size: 11px;
+    margin: 0;
+    font-family: 'PorscheNext Thin';
+    font-weight: 600;
+}

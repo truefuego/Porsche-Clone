@@ -8,6 +8,14 @@
     width: 14.33%;
     display: flex;
     flex-direction: column;
+    gap: 12px
+}
+
+.porsche-car-configurator-filter-buttons-header{
+    font-size: 20px;
+    font-family: 'PorscheNext SemiBold';
+    margin: 0;
+    margin-top: 20px;
 }
 
 .porsche-car-configurator-vertical-divider{
@@ -15,5 +23,84 @@
 }
 
 .porsche-car-configurator-models{
+    height: fit-content;
     width: 76%;
+}
+
+.porsche-car-configurator-button{
+    padding: 12px;
+    padding-left: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    gap: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'PorscheNext Thin';
+}
+
+.porsche-car-configurator-button p{
+    margin: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.porsche-car-configurator-filter-button-deselect-image {
+    background-image: url(../../Assets/Images/Buttons/subtract.png);
+    width: 13px;
+    height: 13px;
+}
+
+.porsche-car-configurator-filter-button-select-image{
+    background-image: url(../../Assets/Images/Buttons/add.png);
+    width: 13px;
+    height: 13px;
+}
+
+.porsche-car-configurator-filter-button-noninteractive-image{
+    background-image: url(../../Assets/Images/Buttons/add-noninteractive.png);
+    width: 13px;
+    height: 13px;
+
+}
+
+.porsche-car-configurator-filter-button-deselect{
+    border: 1px solid #313639;
+    background-color: #313639;
+    color: #fff;
+}
+
+.porsche-car-configurator-filter-button-deselect:hover{
+    border: 1px solid #d5001c;
+    background-color: #d5001c;
+    color: #fff;
+}
+
+.porsche-car-configurator-filter-button-noninteractive{
+    cursor: default;
+    pointer-events: none;
+    color: #c8cacb;
+    border: 1px solid #c8cacb;
+}
+
+.porsche-car-configurator-filter-button-select:hover{
+    border: 1px solid #d5001c;
+    color: #d5001c;
+    .porsche-car-configurator-filter-button-select-image{
+        background-image: url(../../Assets/Images/Buttons/add-red.png);
+    }
+}
+
+/*  */
+
+.porsche-car-configurator-models{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 36px;
+}
+
+.porsche-car-configurator-models img{
+    width: 100%;
 }

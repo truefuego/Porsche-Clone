@@ -51,7 +51,8 @@ export const Cars = [
     kws: 220,
     top_speed: 275,
     acceleration: 4.9,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '718 Boxster',
@@ -68,7 +69,8 @@ export const Cars = [
     kws: 220,
     top_speed: 275,
     acceleration: 4.9,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '718 Cayman Style Edition',
@@ -85,7 +87,8 @@ export const Cars = [
     kws: 220,
     top_speed: 275,
     acceleration: 4.9,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '718 Boxster Style Edition',
@@ -102,7 +105,8 @@ export const Cars = [
     kws: 220,
     top_speed: 275,
     acceleration: 4.9,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '718 Cayman GTS 4.0',
@@ -119,7 +123,8 @@ export const Cars = [
     kws: 294,
     top_speed: 288,
     acceleration: 4.0,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '718 Boxster GTS 4.0',
@@ -136,7 +141,8 @@ export const Cars = [
     kws: 294,
     top_speed: 288,
     acceleration: 4.0,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '718 Cayman GT4 RS',
@@ -153,7 +159,8 @@ export const Cars = [
     kws: 368,
     top_speed: 315,
     acceleration: 3.4,
-    new: false
+    new: false,
+    footnote: false,
   },
 
   
@@ -172,7 +179,8 @@ export const Cars = [
     kws: 283,
     top_speed: 293,
     acceleration: 4.2,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 Carrera T',
@@ -189,7 +197,8 @@ export const Cars = [
     kws: 283,
     top_speed: 291,
     acceleration: 4.0,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 Carrera Cabriolet',
@@ -206,7 +215,8 @@ export const Cars = [
     kws: 283,
     top_speed: 291,
     acceleration: 4.4,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 Carrera S',
@@ -223,7 +233,8 @@ export const Cars = [
     kws: 331,
     top_speed: 308,
     acceleration: 307,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 Carrera S Cabriolet',
@@ -240,7 +251,8 @@ export const Cars = [
     kws: 331,
     top_speed: 306,
     acceleration: 3.9,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 Turbo S',
@@ -257,7 +269,8 @@ export const Cars = [
     kws: 478,
     top_speed: 330,
     acceleration: 2.7,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 GT3',
@@ -266,7 +279,7 @@ export const Cars = [
     model: '911',
     price: 27496000,
     body_design: 'Coupe',
-    transmission: 'Manuel',
+    transmission: 'Manual',
     seats: '2',
     drive: 'RWD',
     fuel_type: 'Gasoline',
@@ -274,7 +287,8 @@ export const Cars = [
     kws: 375,
     top_speed: 318,
     acceleration: 3.4,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 GT3 with Touring Package',
@@ -283,7 +297,7 @@ export const Cars = [
     model: '911',
     price: 27496000,
     body_design: 'Coupe',
-    transmission: 'Manuel',
+    transmission: 'Manual',
     seats: '2',
     drive: 'RWD',
     fuel_type: 'Gasoline',
@@ -291,7 +305,8 @@ export const Cars = [
     kws: 375,
     top_speed: 320,
     acceleration: 3.9,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 GT3 RS',
@@ -308,7 +323,8 @@ export const Cars = [
     kws: 386,
     top_speed: 296,
     acceleration: 3.2,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: '911 S/T',
@@ -317,7 +333,7 @@ export const Cars = [
     model: '911',
     price: 42620000,
     body_design: 'Coupe',
-    transmission: 'Manuel',
+    transmission: 'Manual',
     seats: '2',
     drive: 'RWD',
     fuel_type: 'Gasoline',
@@ -325,7 +341,8 @@ export const Cars = [
     kws: 386,
     top_speed: undefined,
     acceleration: undefined,
-    new: true
+    new: true,
+    footnote: false,
   },
 
   {
@@ -343,7 +360,8 @@ export const Cars = [
     kws: 300,
     top_speed: 230,
     acceleration: 5.4,
-    new: false
+    new: false,
+    footnote: true,
   },
   {
     name: 'Taycan 4S',
@@ -360,7 +378,8 @@ export const Cars = [
     kws: 390,
     top_speed: 250,
     acceleration: 4.0,
-    new: false
+    new: false,
+    footnote: true,
   },
   {
     name: 'Taycan 4S Cross Turismo',
@@ -377,7 +396,8 @@ export const Cars = [
     kws: 420,
     top_speed: 240,
     acceleration: 4.1,
-    new: false
+    new: false,
+    footnote: true,
   },
   {
     name: 'Taycan GTS',
@@ -394,7 +414,8 @@ export const Cars = [
     kws: 440,
     top_speed: 250,
     acceleration: 3.7,
-    new: false
+    new: false,
+    footnote: true,
   },
   {
     name: 'Taycan Turbo',
@@ -411,7 +432,8 @@ export const Cars = [
     kws: 500,
     top_speed: 260,
     acceleration: 3.2,
-    new: false
+    new: false,
+    footnote: true,
   },
   {
     name: 'Taycan Turbo Cross Turismo',
@@ -428,7 +450,8 @@ export const Cars = [
     kws: 500,
     top_speed: 250,
     acceleration: 3.3,
-    new: false
+    new: false,
+    footnote: true,
   },
   {
     name: 'Taycan Turbo S',
@@ -445,7 +468,8 @@ export const Cars = [
     kws: 560,
     top_speed: 260,
     acceleration: 2.8,
-    new: false
+    new: false,
+    footnote: true,
   },
   
   {
@@ -463,7 +487,8 @@ export const Cars = [
     kws: undefined,
     top_speed: undefined,
     acceleration: undefined,
-    new: true
+    new: true,
+    footnote: false,
   },
   
   
@@ -482,7 +507,8 @@ export const Cars = [
     kws: 195,
     top_speed: 232,
     acceleration: 6.4,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: 'Macan S',
@@ -499,7 +525,8 @@ export const Cars = [
     kws: 280,
     top_speed: 256,
     acceleration: 4.8,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: 'Macan GTS',
@@ -516,7 +543,8 @@ export const Cars = [
     kws: 324,
     top_speed: 272,
     acceleration: 4.5,
-    new: false
+    new: false,
+    footnote: false,
   },
   
   {
@@ -534,7 +562,8 @@ export const Cars = [
     kws: 260,
     top_speed: 248,
     acceleration: 6.0,
-    new: false
+    new: false,
+    footnote: false,
   },
   {
     name: 'Cayenne Coupe',
@@ -551,6 +580,7 @@ export const Cars = [
     kws: 324,
     top_speed: 272,
     acceleration: 4.5,
-    new: false
+    new: false,
+    footnote: false,
   }
 ]
