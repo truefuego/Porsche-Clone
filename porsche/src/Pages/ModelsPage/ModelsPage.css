@@ -95,12 +95,13 @@
 /*  */
 
 .porsche-car-configurator-models{
+    display: flex;
+    flex-direction: column;
+}
+
+.porsche-car-configurator-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 12px;
     grid-row-gap: 36px;
-}
-
-.porsche-car-configurator-models img{
-    width: 100%;
 }

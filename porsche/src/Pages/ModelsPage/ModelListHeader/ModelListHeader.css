@@ -1,0 +1,25 @@
+.model-list-header{
+    margin-top: 72px;
+    margin-bottom: 24px;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+}
+
+.model-list-header-image{
+    width: 15px;
+    height: 26px;
+}
+
+.model-list-header-text{
+    margin: 0;
+    font-size: 36px;
+    font-family: 'PorscheNext SemiBold';
+}
+
+.model-list-header:hover{
+    color: #d5001c;
+}

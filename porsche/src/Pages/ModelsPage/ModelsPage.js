@@ -10,10 +10,45 @@ import Add_Image_NonInteractive from '../../Assets/Images/Buttons/add-noninterac
 import Subtract_Image from '../../Assets/Images/Buttons/subtract.png'
 import { Cars } from '../../Stores/Cars'
 import ModelListCard from './ModelListCard/ModelListCard'
+import HeaderArrow from '../../Assets/Images/Buttons/header-image.png'
+import HeaderArrowRed from '../../Assets/Images/Buttons/header-image-red.png'
+import ModelListHeader from './ModelListHeader/ModelListHeader'
 
 const ModelsPage = () => {
   const [carsData,setCarsData] = useState(Cars)
-  const [carsDataShow,setCarsDataShow] = useState([])
+  const [carsDataShow,setCarsDataShow] = useState({
+    '718 Models': [],
+    '718 Cayman GT4 RS': [],
+    '911 Carrera & Targa Models': [],
+    '911 Turbo Models': [],
+    '911 GT3 Models': [],
+    '911 GT3 RS': [],
+    '911 S/T': [],
+    'Taycan Models': [],
+    'Panamera Models': [],
+    'Macan Models': [],
+    'Cayenne Models': [],
+    'Cayenne Coupé Models': []
+  })
+
+  const ResetCarsDataShow = () => {
+    setCarsDataShow({
+      '718 Models': [],
+      '718 Cayman GT4 RS': [],
+      '911 Carrera & Targa Models': [],
+      '911 Turbo Models': [],
+      '911 GT3 Models': [],
+      '911 GT3 RS': [],
+      '911 S/T': [],
+      'Taycan Models': [],
+      'Panamera Models': [],
+      'Macan Models': [],
+      'Cayenne Models': [],
+      'Cayenne Coupé Models': []
+    })
+  }
+
+  const header = ['718 Models','718 Cayman GT4 RS','911 Carrera & Targa Models','911 Turbo Models','911 GT3 Models','911 GT3 RS','911 S/T','Taycan Models','Panamera Models','Macan Models','Cayenne Models','Cayenne Coupé Models']
 
   const [models,setModels] = useState('')
   const [bodyDesign,setBodyDesign] = useState('')
@@ -21,7 +56,29 @@ const ModelsPage = () => {
   const [seats,setSeats] = useState('')
   const [drive,setDrive] = useState('')
   const [fuelType,setFuelType] = useState('')
-  
+
+  const constructCarDataShow = () => {
+    let tempCarsData = {
+      '718 Models': [],
+      '718 Cayman GT4 RS': [],
+      '911 Carrera & Targa Models': [],
+      '911 Turbo Models': [],
+      '911 GT3 Models': [],
+      '911 GT3 RS': [],
+      '911 S/T': [],
+      'Taycan Models': [],
+      'Panamera Models': [],
+      'Macan Models': [],
+      'Cayenne Models': [],
+      'Cayenne Coupé Models': []
+    };
+    carsData.map((item) => {
+      tempCarsData[item.header].push(item)
+    })
+    ResetCarsDataShow()
+    setCarsDataShow(tempCarsData)
+  }
+
   const [visible,setVisible] = useState({
     '' : true,
 
@@ -125,11 +182,16 @@ const ModelsPage = () => {
     setCarsData(tempCarsData)
     resetVisible()
     filterVisible(tempCarsData)
+    constructCarDataShow()
   }
 
   useEffect(() => {
     filterCarData()
   },[models,bodyDesign,transmission,seats,drive,fuelType])
+
+  useEffect(() => {
+    constructCarDataShow()
+  },[carsData])
 
   const ResetFilter = () => {
     setBodyDesign('')
@@ -322,7 +384,14 @@ const ModelsPage = () => {
           </div>
           <div className='porsche-car-configurator-vertical-divider'/>
           <div className='porsche-car-configurator-models'>
-            {carsData.map((item) => (<ModelListCard key={item.name} car={item}/>))}
+            {header.map((hdr) => (
+              <div key={hdr}>
+                {carsDataShow[hdr].length > 0 && <ModelListHeader header={hdr} image={HeaderArrow} hoverImage={HeaderArrowRed}/>}
+                <div className='porsche-car-configurator-grid'>
+                  {carsDataShow[hdr].map((item) => (<ModelListCard key={item.name} car={item}/>))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

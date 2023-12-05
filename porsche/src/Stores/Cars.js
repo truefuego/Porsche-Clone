@@ -39,6 +39,7 @@ export const Cars = [
   {
     name: '718 Cayman',
     header: '718 Models',
+    headerIndex: 0,
     image: Porsche_718_Cayman,
     model: '718',
     price: 14772000,
@@ -57,6 +58,7 @@ export const Cars = [
   {
     name: '718 Boxster',
     header: '718 Models',
+    headerIndex: 0,
     image: Porsche_718_Boxster,
     model: '718',
     price: 15213000,
@@ -75,6 +77,7 @@ export const Cars = [
   {
     name: '718 Cayman Style Edition',
     header: '718 Models',
+    headerIndex: 0,
     image: Porsche_718_Cayman_Style_Edition,
     model: '718',
     price: 15568000,
@@ -93,6 +96,7 @@ export const Cars = [
   {
     name: '718 Boxster Style Edition',
     header: '718 Models',
+    headerIndex: 0,
     image: Porsche_718_Boxster_Style_Edition,
     model: '718',
     price: 16009000,
@@ -111,6 +115,7 @@ export const Cars = [
   {
     name: '718 Cayman GTS 4.0',
     header: '718 Models',
+    headerIndex: 0,
     image: Porsche_718_Cayman_GTS_4_0,
     model: '718',
     price: 16751000,
@@ -129,6 +134,7 @@ export const Cars = [
   {
     name: '718 Boxster GTS 4.0',
     header: '718 Models',
+    headerIndex: 0,
     image: Porsche_718_Boxster_GTS_4_0,
     model: '718',
     price: 17195000,
@@ -147,6 +153,7 @@ export const Cars = [
   {
     name: '718 Cayman GT4 RS',
     header: '718 Cayman GT4 RS',
+    headerIndex: 1,
     image: Porsche_718_Cayman_GT4_RS,
     model: '718',
     price: 27443000,
@@ -167,6 +174,7 @@ export const Cars = [
   {
     name: '911 Carrera',
     header: '911 Carrera & Targa Models',
+    headerIndex: 2,
     image: Porsche_911_Carrera,
     model: '911',
     price: 18646000,
@@ -185,6 +193,7 @@ export const Cars = [
   {
     name: '911 Carrera T',
     header: '911 Carrera & Targa Models',
+    headerIndex: 2,
     image: Porsche_911_Carrera_T,
     model: '911',
     price: 19430000,
@@ -203,6 +212,7 @@ export const Cars = [
   {
     name: '911 Carrera Cabriolet',
     header: '911 Carrera & Targa Models',
+    headerIndex: 2,
     image: Porsche_911_Carrera_Cabriolet,
     model: '911',
     price: 19732000,
@@ -221,6 +231,7 @@ export const Cars = [
   {
     name: '911 Carrera S',
     header: '911 Carrera & Targa Models',
+    headerIndex: 2,
     image: Porsche_911_Carrera_S,
     model: '911',
     price: 20117000,
@@ -239,6 +250,7 @@ export const Cars = [
   {
     name: '911 Carrera S Cabriolet',
     header: '911 Carrera & Targa Models',
+    headerIndex: 2,
     image: Porsche_911_Carrera_S_Cabriolet,
     model: '911',
     price: 21792000,
@@ -257,6 +269,7 @@ export const Cars = [
   {
     name: '911 Turbo S',
     header: '911 Turbo Models',
+    headerIndex: 3,
     image: Porsche_911_Turbo_S,
     model: '911',
     price: 33536000,
@@ -274,7 +287,8 @@ export const Cars = [
   },
   {
     name: '911 GT3',
-    header: '911 Carrera & Targa Models',
+    header: '911 GT3 Models',
+    headerIndex: 4,
     image: Porsche_911_GT3,
     model: '911',
     price: 27496000,
@@ -292,7 +306,8 @@ export const Cars = [
   },
   {
     name: '911 GT3 with Touring Package',
-    header: '911 Carrera & Targa Models',
+    header: '911 GT3 Models',
+    headerIndex: 4,
     image: Porsche_911_GT3_With_Touring_Package,
     model: '911',
     price: 27496000,
@@ -311,6 +326,7 @@ export const Cars = [
   {
     name: '911 GT3 RS',
     header: '911 GT3 RS',
+    headerIndex: 5,
     image: Porsche_911_GT3_RS,
     model: '911',
     price: 35056000,
@@ -329,6 +345,7 @@ export const Cars = [
   {
     name: '911 S/T',
     header: '911 S/T',
+    headerIndex: 6,
     image: Porsche_911_S_T,
     model: '911',
     price: 42620000,
@@ -348,6 +365,7 @@ export const Cars = [
   {
     name: 'Taycan',
     header: 'Taycan Models',
+    headerIndex: 7,
     image: Porsche_Taycan,
     model: 'Taycan',
     price: 16093000,
@@ -366,6 +384,7 @@ export const Cars = [
   {
     name: 'Taycan 4S',
     header: 'Taycan Models',
+    headerIndex: 7,
     image: Porsche_Taycan_4S,
     model: 'Taycan',
     price: 17535000,
@@ -384,6 +403,7 @@ export const Cars = [
   {
     name: 'Taycan 4S Cross Turismo',
     header: 'Taycan Models',
+    headerIndex: 7,
     image: Porsche_Taycan_4S_Cross_Turismo,
     model: 'Taycan',
     price: 18213000,
@@ -402,6 +422,7 @@ export const Cars = [
   {
     name: 'Taycan GTS',
     header: 'Taycan Models',
+    headerIndex: 7,
     image: Porsche_Taycan_GTS,
     model: 'Taycan',
     price: 20353000,
@@ -420,6 +441,7 @@ export const Cars = [
   {
     name: 'Taycan Turbo',
     header: 'Taycan Models',
+    headerIndex: 7,
     image: Porsche_Taycan_Turbo,
     model: 'Taycan',
     price: 22309000,
@@ -438,6 +460,7 @@ export const Cars = [
   {
     name: 'Taycan Turbo Cross Turismo',
     header: 'Taycan Models',
+    headerIndex: 7,
     image: Porsche_Taycan_Turbo_Cross_Turismo,
     model: 'Taycan',
     price: 22500000,
@@ -456,6 +479,7 @@ export const Cars = [
   {
     name: 'Taycan Turbo S',
     header: 'Taycan Models',
+    headerIndex: 7,
     image: Porsche_Taycan_Turbo_S,
     model: 'Taycan',
     price: 24372000,
@@ -475,6 +499,7 @@ export const Cars = [
   {
     name: 'Panamera',
     header: 'Panamera Models',
+    headerIndex: 8,
     image: Porsche_Panamera,
     model: 'Panamera',
     price: 16756000,
@@ -495,6 +520,7 @@ export const Cars = [
   {
     name: 'Macan',
     header: 'Macan Models',
+    headerIndex: 9,
     image: Porsche_Macan,
     model: 'Macan',
     price: 8806000,
@@ -513,6 +539,7 @@ export const Cars = [
   {
     name: 'Macan S',
     header: 'Macan Models',
+    headerIndex: 9,
     image: Porsche_Macan_S,
     model: 'Macan',
     price: 14352000,
@@ -531,6 +558,7 @@ export const Cars = [
   {
     name: 'Macan GTS',
     header: 'Macan Models',
+    headerIndex: 9,
     image: Porsche_Macan_GTS,
     model: 'Macan',
     price: 15347000,
@@ -550,6 +578,7 @@ export const Cars = [
   {
     name: 'Cayenne',
     header: 'Cayenne Models',
+    headerIndex: 10,
     image: Porsche_Cayenne,
     model: 'Cayenne',
     price: 13561000,
@@ -566,8 +595,9 @@ export const Cars = [
     footnote: false,
   },
   {
-    name: 'Cayenne Coupe',
-    header: 'Cayenne Coupe Models',
+    name: 'Cayenne Coupé',
+    header: 'Cayenne Coupé Models',
+    headerIndex: 11,
     image: Porsche_Cayenne_Coupe,
     model: 'Cayenne',
     price: 14185000,
