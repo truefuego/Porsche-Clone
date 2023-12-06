@@ -508,7 +508,7 @@ export const Cars = [
     seats: '4-5',
     drive: 'RWD',
     fuel_type: 'Gasoline',
-    horsepower: undefined,
+    horsepower: 761,
     kws: undefined,
     top_speed: undefined,
     acceleration: undefined,
