@@ -145,3 +145,43 @@
     height: 100%;
     filter: grayscale(100%);
 }
+
+.range-slider{
+    display: flex;
+    flex-direction: column;
+}
+
+.range-slider-slider{
+    margin-top: 12px;
+    width: 100%;
+    height: 2px;
+    background-color: #d5001c;
+}
+
+.range-slider-slider .thumb{
+    cursor: pointer;
+    top: -10px;
+    height: 21px;
+    width: 21px;
+    border-radius: 10px;
+    border: 1px solid #c8cacb;
+    background-color: #fff;
+}
+
+.range-slider-slider .thumb:focus{
+    border: 1px solid #d5001c !important;
+    background-color: #d5001c !important;
+}
+
+.range-slider-slider .thumb:hover{
+    border: 1px solid #d5001c !important;
+    background-color: #d5001c !important;
+}
+
+.range-slider-data{
+    font-size: 14px;
+    font-family: 'PorscheNext Regular';
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef, useCallback } from 'react'
 import './ModelsPage.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
@@ -13,8 +13,14 @@ import ModelListCard from './ModelListCard/ModelListCard'
 import HeaderArrow from '../../Assets/Images/Buttons/header-image.png'
 import HeaderArrowRed from '../../Assets/Images/Buttons/header-image-red.png'
 import ModelListHeader from './ModelListHeader/ModelListHeader'
+import Slider from 'react-slider'
 
 const ModelsPage = () => {
+  const HPSMIN = 265
+  const HPSMAX = 761
+  const PRICEMIN = 8806000
+  const PRICEMAX = 42620000
+
   const [carsData,setCarsData] = useState(Cars)
   const [carsDataShow,setCarsDataShow] = useState({
     '718 Models': [],
@@ -57,8 +63,7 @@ const ModelsPage = () => {
   const [drive,setDrive] = useState('')
   const [fuelType,setFuelType] = useState('')
 
-  const [priceLow,setPriceLow] = useState(8806000)
-  const [priceHigh,setPriceHigh] = useState(42620000)
+  const [price,setPrice] = useState([8806000,42620000])
   const [horsepower,setHorsepower] = useState(265)
 
   const constructCarDataShow = () => {
@@ -183,6 +188,9 @@ const ModelsPage = () => {
     if(fuelType !== '') {
       tempCarsData = tempCarsData?.filter((item) => item.fuel_type === fuelType)
     }
+    tempCarsData = tempCarsData?.filter((item) => item.price >= price[0]);
+    tempCarsData = tempCarsData?.filter((item) => item.price <= price[1]);
+    tempCarsData = tempCarsData?.filter((item) => item.horsepower >= horsepower);
     setCarsData(tempCarsData)
     resetVisible()
     filterVisible(tempCarsData)
@@ -191,7 +199,7 @@ const ModelsPage = () => {
 
   useEffect(() => {
     filterCarData()
-  },[models,bodyDesign,transmission,seats,drive,fuelType])
+  },[models,bodyDesign,transmission,seats,drive,fuelType,horsepower,price])
 
   useEffect(() => {
     constructCarDataShow()
@@ -204,6 +212,8 @@ const ModelsPage = () => {
     setModels('')
     setSeats('')
     setTransmission('')
+    setHorsepower(265)
+    setPrice([8806000,42620000])
     setCarsData(Cars)
   }
 
@@ -384,6 +394,32 @@ const ModelsPage = () => {
             <div className={`porsche-car-configurator-button ${fuelType === 'Electro' ? 'porsche-car-configurator-filter-button-deselect' : fuelType === '' && visible['Electro'] === true ? 'porsche-car-configurator-filter-button-select' : 'porsche-car-configurator-filter-button-noninteractive'}`} onClick={() => handleFuelTypeChange('Electro')}>
               <div className={`${fuelType === 'Electro' ? 'porsche-car-configurator-filter-button-deselect-image' : fuelType === '' && visible['Electro'] === true ? 'porsche-car-configurator-filter-button-select-image' : 'porsche-car-configurator-filter-button-noninteractive-image'}`}/>
               <p>Electro</p>
+            </div>
+            
+            <p className='porsche-car-configurator-filter-buttons-header'>MSRP $</p>
+            <div className='range-slider'>
+              <Slider className={'range-slider-slider'} value={price} min={PRICEMIN} max={PRICEMAX} onChange={setPrice} step={106000}/>
+              <div className='range-slider-data'>
+                <p>
+                  {(price[0]).toLocaleString('en-US')}
+                </p>
+                <p>
+                  {(price[1]).toLocaleString('en-US')}
+                </p>
+              </div>
+            </div>
+
+            <p className='porsche-car-configurator-filter-buttons-header'>Horsepower</p>
+            <div className='range-slider'>
+              <Slider className={'range-slider-slider'} value={horsepower} min={HPSMIN} max={HPSMAX} onChange={setHorsepower} step={4}/>
+              <div className='range-slider-data'>
+                <p>
+                  {horsepower}
+                </p>
+                <p>
+                  {'761'}
+                </p>
+              </div>
             </div>
 
             <div className='porsche-car-configurator-button-reset' onClick={() => ResetFilter()}>
