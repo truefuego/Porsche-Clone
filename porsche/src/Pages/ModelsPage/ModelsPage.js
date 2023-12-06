@@ -7,7 +7,7 @@ import Button_Image from '../../Assets/Images/Buttons/link-arrow-white-left.png'
 import Add_Image from '../../Assets/Images/Buttons/add.png'
 import Add_Image_Red from '../../Assets/Images/Buttons/add-red.png'
 import Add_Image_NonInteractive from '../../Assets/Images/Buttons/add-noninteractive.png'
-import Subtract_Image from '../../Assets/Images/Buttons/subtract.png'
+import Reset_Image from '../../Assets/Images/Navigation/LinkArrowRed.png'
 import { Cars } from '../../Stores/Cars'
 import ModelListCard from './ModelListCard/ModelListCard'
 import HeaderArrow from '../../Assets/Images/Buttons/header-image.png'
@@ -56,6 +56,10 @@ const ModelsPage = () => {
   const [seats,setSeats] = useState('')
   const [drive,setDrive] = useState('')
   const [fuelType,setFuelType] = useState('')
+
+  const [priceLow,setPriceLow] = useState(8806000)
+  const [priceHigh,setPriceHigh] = useState(42620000)
+  const [horsepower,setHorsepower] = useState(265)
 
   const constructCarDataShow = () => {
     let tempCarsData = {
@@ -380,6 +384,13 @@ const ModelsPage = () => {
             <div className={`porsche-car-configurator-button ${fuelType === 'Electro' ? 'porsche-car-configurator-filter-button-deselect' : fuelType === '' && visible['Electro'] === true ? 'porsche-car-configurator-filter-button-select' : 'porsche-car-configurator-filter-button-noninteractive'}`} onClick={() => handleFuelTypeChange('Electro')}>
               <div className={`${fuelType === 'Electro' ? 'porsche-car-configurator-filter-button-deselect-image' : fuelType === '' && visible['Electro'] === true ? 'porsche-car-configurator-filter-button-select-image' : 'porsche-car-configurator-filter-button-noninteractive-image'}`}/>
               <p>Electro</p>
+            </div>
+
+            <div className='porsche-car-configurator-button-reset' onClick={() => ResetFilter()}>
+              <div className='porsche-car-configurator-button-reset-image-wrapper'>
+                <img className='porsche-car-configurator-button-reset-image-wrapper-image' src={Reset_Image}/>
+              </div>
+              <p>Reset Filter</p>
             </div>
           </div>
           <div className='porsche-car-configurator-vertical-divider'/>

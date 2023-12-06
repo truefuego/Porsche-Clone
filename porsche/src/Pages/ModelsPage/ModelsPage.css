@@ -105,3 +105,43 @@
     grid-column-gap: 12px;
     grid-row-gap: 36px;
 }
+
+
+.porsche-car-configurator-button-reset{
+    
+    padding: 12px;
+    padding-left: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    gap: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'PorscheNext Thin';
+}
+
+
+.porsche-car-configurator-button-reset p{
+    margin: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.porsche-car-configurator-button-reset:hover{
+    color: #d5001c;
+    border-color: #d5001c;
+    .porsche-car-configurator-button-reset-image-wrapper-image{
+        filter: none;
+    }
+}
+
+.porsche-car-configurator-button-reset-image-wrapper{
+    width: 8px;
+}
+
+.porsche-car-configurator-button-reset-image-wrapper-image{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
