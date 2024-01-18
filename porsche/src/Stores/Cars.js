@@ -35,12 +35,53 @@ import Porsche_Cayenne from '../Assets/Cars/Images/cayenne.webp'
 import Porsche_Cayenne_Coupe from '../Assets/Cars/Images/cayenne-coupe.webp'
 
 
+import Porsche_718_Cayman_Carousel from '../Assets/Cars/Porsche_718/cayman.webp'
+import Porsche_718_Boxster_Carousel from '../Assets/Cars/Porsche_718/boxster.webp'
+import Porsche_718_Cayman_Style_Edition_Carousel from '../Assets/Cars/Porsche_718/cayman-style-edition.webp'
+import Porsche_718_Boxster_Style_Edition_Carousel from '../Assets/Cars/Porsche_718/boxster-style-edition.webp'
+import Porsche_718_Cayman_GTS_4_0_Carousel from '../Assets/Cars/Porsche_718/cayman-gts-4-0.webp'
+import Porsche_718_Boxster_GTS_4_0_Carousel from '../Assets/Cars/Porsche_718/boxster-gts-4-0.webp'
+import Porsche_718_Cayman_GT4_RS_Carousel from '../Assets/Cars/Porsche_718/cayman-gt4-rs.webp'
+
+import Porsche_911_Carrera_Carousel from '../Assets/Cars/Porsche_911/carrera.webp'
+import Porsche_911_Carrera_T_Carousel from '../Assets/Cars/Porsche_911/carrera-t.webp'
+import Porsche_911_Carrera_Cabriolet_Carousel from '../Assets/Cars/Porsche_911/carrera-cabriolet.webp'
+import Porsche_911_Carrera_S_Carousel from '../Assets/Cars/Porsche_911/carrera-s.webp'
+import Porsche_911_Carrera_S_Cabriolet_Carousel from '../Assets/Cars/Porsche_911/carrera-s-cabriolet.webp'
+import Porsche_911_Turbo_S_Carousel from '../Assets/Cars/Porsche_911/turbo-s.webp'
+import Porsche_911_GT3_Carousel from '../Assets/Cars/Porsche_911/gt3.webp'
+import Porsche_911_GT3_With_Touring_Package_Carousel from '../Assets/Cars/Porsche_911/gt3-with-touring-package.webp'
+import Porsche_911_GT3_RS_Carousel from '../Assets/Cars/Porsche_911/gt3-rs.webp'
+import Porsche_911_S_T_Carousel from '../Assets/Cars/Porsche_911/911-s-t.webp'
+
+import Porsche_Taycan_Carousel from '../Assets/Cars/Porsche_Taycan/taycan.webp'
+import Porsche_Taycan_4S_Carousel from '../Assets/Cars/Porsche_Taycan/taycan-4s.webp'
+import Porsche_Taycan_4S_Cross_Turismo_Carousel from '../Assets/Cars/Porsche_Taycan/taycan-4s-cross-turismo.webp'
+import Porsche_Taycan_GTS_Carousel from '../Assets/Cars/Porsche_Taycan/taycan-gts.webp'
+import Porsche_Taycan_Turbo_Carousel from '../Assets/Cars/Porsche_Taycan/taycan-turbo.webp'
+import Porsche_Taycan_Turbo_Cross_Turismo_Carousel from '../Assets/Cars/Porsche_Taycan/taycan-turbo-cross-turismo.webp'
+import Porsche_Taycan_Turbo_S_Carousel from '../Assets/Cars/Porsche_Taycan/taycan-turbo-s.webp'
+
+import Porsche_Panamera_Carousel from '../Assets/Cars/Porsche_Panamera/panamera.webp'
+
+import Porsche_Macan_Carousel from '../Assets/Cars/Porsche_Macan/macan.webp'
+import Porsche_Macan_S_Carousel from '../Assets/Cars/Porsche_Macan/macan-s.webp'
+import Porsche_Macan_GTS_Carousel from '../Assets/Cars/Porsche_Macan/macan-gts.webp'
+
+import Porsche_Cayenne_Carousel from '../Assets/Cars/Porsche_Cayenne/cayenne.webp'
+import Porsche_Cayenne_Coupe_Carousel from '../Assets/Cars/Porsche_Cayenne/cayenne-coupe.webp'
+
+
+
+
 export const Cars = [
   {
     name: '718 Cayman',
     header: '718 Models',
     headerIndex: 0,
     image: Porsche_718_Cayman,
+    carousel_image: Porsche_718_Cayman_Carousel,
+    carousel_name: '718 Cayman',
     model: '718',
     price: 14772000,
     body_design: 'Coupe',
@@ -60,6 +101,8 @@ export const Cars = [
     header: '718 Models',
     headerIndex: 0,
     image: Porsche_718_Boxster,
+    carousel_image: Porsche_718_Boxster_Carousel,
+    carousel_name: '718 Boxster',
     model: '718',
     price: 15213000,
     body_design: 'Cabriolet',
@@ -79,6 +122,8 @@ export const Cars = [
     header: '718 Models',
     headerIndex: 0,
     image: Porsche_718_Cayman_Style_Edition,
+    carousel_image: Porsche_718_Cayman_Style_Edition_Carousel,
+    carousel_name: '718 Cayman Style Edition',
     model: '718',
     price: 15568000,
     body_design: 'Coupe',
@@ -98,6 +143,8 @@ export const Cars = [
     header: '718 Models',
     headerIndex: 0,
     image: Porsche_718_Boxster_Style_Edition,
+    carousel_image: Porsche_718_Boxster_Style_Edition_Carousel,
+    carousel_name: '718 Boxster Style Edition',
     model: '718',
     price: 16009000,
     body_design: 'Cabriolet',
@@ -117,6 +164,8 @@ export const Cars = [
     header: '718 Models',
     headerIndex: 0,
     image: Porsche_718_Cayman_GTS_4_0,
+    carousel_image: Porsche_718_Cayman_GTS_4_0_Carousel,
+    carousel_name: '718 Cayman GTS 4.0',
     model: '718',
     price: 16751000,
     body_design: 'Coupe',
@@ -136,6 +185,8 @@ export const Cars = [
     header: '718 Models',
     headerIndex: 0,
     image: Porsche_718_Boxster_GTS_4_0,
+    carousel_image: Porsche_718_Boxster_GTS_4_0_Carousel,
+    carousel_name: '718 Boxster GTS 4.0',
     model: '718',
     price: 17195000,
     body_design: 'Cabriolet',
@@ -155,6 +206,8 @@ export const Cars = [
     header: '718 Cayman GT4 RS',
     headerIndex: 1,
     image: Porsche_718_Cayman_GT4_RS,
+    carousel_image: Porsche_718_Cayman_GT4_RS_Carousel,
+    carousel_name: '718 Cayman GT4 RS',
     model: '718',
     price: 27443000,
     body_design: 'Coupe',
@@ -176,6 +229,8 @@ export const Cars = [
     header: '911 Carrera & Targa Models',
     headerIndex: 2,
     image: Porsche_911_Carrera,
+    carousel_image: Porsche_911_Carrera_Carousel,
+    carousel_name: '911 Carrera',
     model: '911',
     price: 18646000,
     body_design: 'Coupe',
@@ -195,6 +250,8 @@ export const Cars = [
     header: '911 Carrera & Targa Models',
     headerIndex: 2,
     image: Porsche_911_Carrera_T,
+    carousel_image: Porsche_911_Carrera_T_Carousel,
+    carousel_name: '911 Carrera T',
     model: '911',
     price: 19430000,
     body_design: 'Coupe',
@@ -214,6 +271,8 @@ export const Cars = [
     header: '911 Carrera & Targa Models',
     headerIndex: 2,
     image: Porsche_911_Carrera_Cabriolet,
+    carousel_image: Porsche_911_Carrera_Cabriolet_Carousel,
+    carousel_name: '911 Carrera Cabriolet',
     model: '911',
     price: 19732000,
     body_design: 'Cabriolet',
@@ -233,6 +292,8 @@ export const Cars = [
     header: '911 Carrera & Targa Models',
     headerIndex: 2,
     image: Porsche_911_Carrera_S,
+    carousel_image: Porsche_911_Carrera_S_Carousel,
+    carousel_name: '911 Carrera S',
     model: '911',
     price: 20117000,
     body_design: 'Coupe',
@@ -252,6 +313,8 @@ export const Cars = [
     header: '911 Carrera & Targa Models',
     headerIndex: 2,
     image: Porsche_911_Carrera_S_Cabriolet,
+    carousel_image: Porsche_911_Carrera_S_Cabriolet_Carousel,
+    carousel_name: '911 Carrera S Cabriolet',
     model: '911',
     price: 21792000,
     body_design: 'Cabriolet',
@@ -271,6 +334,8 @@ export const Cars = [
     header: '911 Turbo Models',
     headerIndex: 3,
     image: Porsche_911_Turbo_S,
+    carousel_image: Porsche_911_Turbo_S_Carousel,
+    carousel_name: '911 Turbo S',
     model: '911',
     price: 33536000,
     body_design: 'Coupe',
@@ -290,6 +355,8 @@ export const Cars = [
     header: '911 GT3 Models',
     headerIndex: 4,
     image: Porsche_911_GT3,
+    carousel_image: Porsche_911_GT3_Carousel,
+    carousel_name: '911 GT3',
     model: '911',
     price: 27496000,
     body_design: 'Coupe',
@@ -309,6 +376,8 @@ export const Cars = [
     header: '911 GT3 Models',
     headerIndex: 4,
     image: Porsche_911_GT3_With_Touring_Package,
+    carousel_image: Porsche_911_GT3_With_Touring_Package_Carousel,
+    carousel_name: '911 GT3 with Touring Package',
     model: '911',
     price: 27496000,
     body_design: 'Coupe',
@@ -328,6 +397,8 @@ export const Cars = [
     header: '911 GT3 RS',
     headerIndex: 5,
     image: Porsche_911_GT3_RS,
+    carousel_image: Porsche_911_GT3_RS_Carousel,
+    carousel_name: '911 GT3 RS',
     model: '911',
     price: 35056000,
     body_design: 'Coupe',
@@ -347,6 +418,8 @@ export const Cars = [
     header: '911 S/T',
     headerIndex: 6,
     image: Porsche_911_S_T,
+    carousel_image: Porsche_911_S_T_Carousel,
+    carousel_name: '911 S/T',
     model: '911',
     price: 42620000,
     body_design: 'Coupe',
@@ -367,6 +440,8 @@ export const Cars = [
     header: 'Taycan Models',
     headerIndex: 7,
     image: Porsche_Taycan,
+    carousel_image: Porsche_Taycan_Carousel,
+    carousel_name: 'Taycan',
     model: 'Taycan',
     price: 16093000,
     body_design: 'Sport Saloon',
@@ -386,6 +461,8 @@ export const Cars = [
     header: 'Taycan Models',
     headerIndex: 7,
     image: Porsche_Taycan_4S,
+    carousel_image: Porsche_Taycan_4S_Carousel,
+    carousel_name: 'Taycan 4S',
     model: 'Taycan',
     price: 17535000,
     body_design: 'Sport Saloon',
@@ -405,6 +482,8 @@ export const Cars = [
     header: 'Taycan Models',
     headerIndex: 7,
     image: Porsche_Taycan_4S_Cross_Turismo,
+    carousel_image: Porsche_Taycan_4S_Cross_Turismo_Carousel,
+    carousel_name: 'Taycan 4S Cross Turismo',
     model: 'Taycan',
     price: 18213000,
     body_design: 'Cross Turismo',
@@ -424,6 +503,8 @@ export const Cars = [
     header: 'Taycan Models',
     headerIndex: 7,
     image: Porsche_Taycan_GTS,
+    carousel_image: Porsche_Taycan_GTS_Carousel,
+    carousel_name: 'Taycan GTS',
     model: 'Taycan',
     price: 20353000,
     body_design: 'Sport Saloon',
@@ -443,6 +524,8 @@ export const Cars = [
     header: 'Taycan Models',
     headerIndex: 7,
     image: Porsche_Taycan_Turbo,
+    carousel_image: Porsche_Taycan_Turbo_Carousel,
+    carousel_name: 'Taycan Turbo',
     model: 'Taycan',
     price: 22309000,
     body_design: 'Sport Saloon',
@@ -462,6 +545,8 @@ export const Cars = [
     header: 'Taycan Models',
     headerIndex: 7,
     image: Porsche_Taycan_Turbo_Cross_Turismo,
+    carousel_image: Porsche_Taycan_Turbo_Cross_Turismo_Carousel,
+    carousel_name: 'Taycan Turbo Cross Turismo',
     model: 'Taycan',
     price: 22500000,
     body_design: 'Cross Turismo',
@@ -481,6 +566,8 @@ export const Cars = [
     header: 'Taycan Models',
     headerIndex: 7,
     image: Porsche_Taycan_Turbo_S,
+    carousel_image: Porsche_Taycan_Turbo_S_Carousel,
+    carousel_name: 'Taycan Turbo S',
     model: 'Taycan',
     price: 24372000,
     body_design: 'Sport Saloon',
@@ -501,6 +588,8 @@ export const Cars = [
     header: 'Panamera Models',
     headerIndex: 8,
     image: Porsche_Panamera,
+    carousel_image: Porsche_Panamera_Carousel,
+    carousel_name: 'Panamera',
     model: 'Panamera',
     price: 16756000,
     body_design: 'Sport Saloon',
@@ -522,6 +611,8 @@ export const Cars = [
     header: 'Macan Models',
     headerIndex: 9,
     image: Porsche_Macan,
+    carousel_image: Porsche_Macan_Carousel,
+    carousel_name: 'Macan',
     model: 'Macan',
     price: 8806000,
     body_design: 'SUV',
@@ -541,6 +632,8 @@ export const Cars = [
     header: 'Macan Models',
     headerIndex: 9,
     image: Porsche_Macan_S,
+    carousel_image: Porsche_Macan_S_Carousel,
+    carousel_name: 'Macan S',
     model: 'Macan',
     price: 14352000,
     body_design: 'SUV',
@@ -560,6 +653,8 @@ export const Cars = [
     header: 'Macan Models',
     headerIndex: 9,
     image: Porsche_Macan_GTS,
+    carousel_image: Porsche_Macan_GTS_Carousel,
+    carousel_name: 'Macan GTS',
     model: 'Macan',
     price: 15347000,
     body_design: 'SUV',
@@ -580,6 +675,8 @@ export const Cars = [
     header: 'Cayenne Models',
     headerIndex: 10,
     image: Porsche_Cayenne,
+    carousel_image: Porsche_Cayenne_Carousel,
+    carousel_name: 'Cayenne',
     model: 'Cayenne',
     price: 13561000,
     body_design: 'SUV',
@@ -599,6 +696,8 @@ export const Cars = [
     header: 'Cayenne Coupé Models',
     headerIndex: 11,
     image: Porsche_Cayenne_Coupe,
+    carousel_image: Porsche_Cayenne_Coupe_Carousel,
+    carousel_name: 'Cayenne Coupé',
     model: 'Cayenne',
     price: 14185000,
     body_design: 'Coupe',
