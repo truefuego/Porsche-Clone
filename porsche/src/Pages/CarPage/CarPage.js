@@ -9,7 +9,7 @@ const CarPage = () => {
     const {modelName} = useParams()
     
   return (
-    <div>
+    <div className='car-page'>
       <Navbar />
       <CarsCarousel />
     </div>

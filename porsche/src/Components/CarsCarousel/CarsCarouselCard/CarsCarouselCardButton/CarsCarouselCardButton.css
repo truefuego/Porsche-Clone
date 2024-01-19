@@ -1,0 +1,35 @@
+.cars-carousel-card-button{
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 13px;
+}
+
+.cars-carousel-card-button:hover{
+    border: 1px solid #d5001c;
+    background: transparent;
+    color: #d5001c;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 13px;
+}
+
+.cars-carousel-card-button img{
+    width: 7px;
+    height: 10px;
+}
+
+.cars-carousel-card-button p{
+    margin: 0;
+    padding: 0;
+    font-family: 'PorscheNext Regular';
+    font-size: 16px;
+}

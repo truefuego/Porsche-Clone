@@ -1,5 +1,64 @@
 .cars-carousel-card{
-    width: 50vw;
-    height: 80%;
-    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw !important;
+    overflow-x: hidden;
+}
+
+.cars-carousel-card img{
+    padding: 0px;
+    scale: 1.2;
+    height: 60%;
+}
+
+.cars-carousel-card-name{
+    margin: 24px 0 0 0;
+    font-size: 48px;
+    font-family: 'PorscheNext SemiBold';
+}
+
+.cars-carousel-card-price{
+    padding: 0;
+    margin: 0;
+    line-height: 8px;
+    font-family: 'PorscheNext Regular';
+}
+
+.cars-carousel-card-car-data{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cars-carousel-card-car-data-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cars-carousel-card-car-data-value{
+    font-family: 'PorscheNext Bold';
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.cars-carousel-card-car-data-attribute{
+    font-family: 'PorscheNext Regular';
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.cars-carousel-card-button-section{
+    width: 90%;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    padding-top: 32px;
 }

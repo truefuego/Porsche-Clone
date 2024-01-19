@@ -10,70 +10,91 @@
 }
 
 .cars-carousel-data{
-    padding: 60px 0 60px 0;
+    padding: 56px 0 56px 0;
     position: relative;
-    width: 100%;
+    width: auto;
     height: 110vh;
     z-index: 2 !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     color: azure;
 }
 
-/* .cars-carousel{
-    position: relative;
-    background-image: url(../../Assets/Images/carousel-background.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 110vh;
+.cars-carousel-filters{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-self: center;
+    gap: 20px;
 }
 
-.cars-carousel-background{
-    position: absolute;
+.cars-carousel-filters-buttons{
+    padding: 0;
+    font-family: 'PorscheNext Regular';
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: none;
+    color: White;
+}
+
+.selected{
+    font-family: 'PorscheNext SemiBold';
+    font-size: 19px;
+    border-bottom: 2px solid #d5001c;
+}
+
+.cars-carousel-filters-buttons:hover{
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #d5001c;
 }
 
 .cars-carousel-cards{
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: hidden;
+}
+
+.cars-carousel-cards-navigator{
     display: flex;
-    position: relative;
-    overflow-x: scroll;
-    width: 100%;
-    z-index: 1;
-    background-color: aqua;
-}
-
-.carousel-background-image-wrapper{
-    width: 100%;
-    height: 100%;
-    box-shadow: 
-        inset 0px -110px 120px 40px #000; 
-}
-
-.carousel-background-image{
-    position: relative;
-    width: 100%;
-    z-index: -2;
-}
-
-.cars-carousel-data-wrapper{
     position: absolute;
+    height: 110vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cars-carousel-data{
+.cars-carousel-cards-navigator button{
+    z-index: 11 !important;
+    box-shadow: 10px 0 0 0 rgba(0,0,0,.3);
+    border: none;
+    height: 50px;
+    width: 50px;
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.cars-carousel-data-cards {
+.cars-carousel-cards-navigator button img{
+    height: 16px;
+    width: 16px;
+}
+
+.cars-carousel-indexes {
     display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    height: 100%;
-    gap: 10px;
-} */
+    align-self: center;
+}
+
+.card-carousel-card-padder{
+    width: 25vw;
+}
+
+.snaps-inline-carousel{
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline-carousel > * {
+    scroll-snap-align: middle;
+}

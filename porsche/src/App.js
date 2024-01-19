@@ -11,7 +11,7 @@ function App() {
       <Route path='/' element={<HomePage />}/>
       <Route path='/models' element={<ModelsPage />}/>
       <Route path='/model-start' element={<ModelStartPage />}/>
-      <Route path='/models/:modelName' element={<CarPage />}/>
+      <Route path='/models/:modelName/:modelHeader' element={<CarPage />}/>
     </Routes>
   );
 }
