@@ -11,6 +11,7 @@
 }
 
 .cars-carousel-card-button:hover{
+    cursor: pointer;
     border: 1px solid #d5001c;
     background: transparent;
     color: #d5001c;

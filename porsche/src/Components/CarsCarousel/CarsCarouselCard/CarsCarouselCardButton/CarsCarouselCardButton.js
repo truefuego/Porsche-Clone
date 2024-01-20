@@ -7,7 +7,7 @@ const CarsCarouselCardButton = ({text}) => {
   const [hovering,setHovering] = useState(false)
   return (
     <div className='cars-carousel-card-button' onMouseEnter={() => setHovering(!hovering)} onMouseLeave={() => setHovering(!hovering)}>
-      {hovering ? (<img src={LinkArrowRed}/>) : (<img src={RightLinkArrow}/>)}
+      {hovering ? (<img src={LinkArrowRed} alt='link-arrow-red'/>) : (<img src={RightLinkArrow} alt='link-arrow-white'/>)}
       <p>{text}</p>
     </div>
   )

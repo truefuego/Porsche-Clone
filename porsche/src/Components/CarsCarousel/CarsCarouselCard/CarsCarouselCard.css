@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 50vw !important;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .cars-carousel-card img{
@@ -12,10 +12,18 @@
     height: 60%;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: .7;}
+    100% { opacity: 1; }
+}
+
 .cars-carousel-card-name{
     margin: 24px 0 0 0;
     font-size: 48px;
     font-family: 'PorscheNext SemiBold';
+    opacity: 0;
+    animation: fadeIn 400ms ease 400ms forwards;
 }
 
 .cars-carousel-card-price{
@@ -23,6 +31,8 @@
     margin: 0;
     line-height: 8px;
     font-family: 'PorscheNext Regular';
+    opacity: 0;
+    animation: fadeIn 400ms ease 400ms forwards;
 }
 
 .cars-carousel-card-car-data{
@@ -43,12 +53,16 @@
 
 .cars-carousel-card-car-data-value{
     font-family: 'PorscheNext Bold';
+    opacity: 0;
+    animation: fadeIn 400ms ease 400ms forwards;
     font-size: 22px;
     padding: 0;
     margin: 0;
 }
 
 .cars-carousel-card-car-data-attribute{
+    opacity: 0;
+    animation: fadeIn 400ms ease 400ms forwards;
     font-family: 'PorscheNext Regular';
     font-size: 16px;
     padding: 0;
@@ -56,6 +70,8 @@
 }
 
 .cars-carousel-card-button-section{
+    opacity: 0;
+    animation: fadeIn 300ms ease 300ms forwards;
     width: 90%;
     display: flex;
     gap: 8px;

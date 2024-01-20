@@ -304,7 +304,7 @@ export const Cars = [
     horsepower: 450,
     kws: 331,
     top_speed: 308,
-    acceleration: 307,
+    acceleration: 3.7,
     new: false,
     footnote: false,
   },

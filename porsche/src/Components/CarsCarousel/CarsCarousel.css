@@ -68,7 +68,7 @@
 
 .cars-carousel-cards-navigator button{
     z-index: 11 !important;
-    box-shadow: 10px 0 0 0 rgba(0,0,0,.3);
+    box-shadow: 8px 4px 16px 0 rgba(0,0,0,.3);
     border: none;
     height: 50px;
     width: 50px;
