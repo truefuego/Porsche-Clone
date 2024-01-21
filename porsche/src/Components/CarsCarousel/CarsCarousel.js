@@ -90,22 +90,20 @@ const CarsCarousel = () => {
     <div className='cars-carousel'>
       <img src={Carousel_Background} className='cars-carousel-background' alt='carousel-backgorund'/>
       <div className='cars-carousel-cards-navigator'>
-        {clicks !== 0 && (<button onClick={() => scrollToPreviousElement()} className='cars-carousel-cards-navigator-button'><img className='hovering-arrow-navigator' src={LeftArrow} alt='left-arrow'/></button>)}
+        {(clicks !== 0) && (<button onClick={() => scrollToPreviousElement()} className='cars-carousel-cards-navigator-button'><img className='hovering-arrow-navigator' src={LeftArrow} alt='left-arrow'/></button>)}
         <div />
-        {clicks !== carData.length - 1 && (<button onClick={() => scrollToNextElement()} className='cars-carousel-cards-navigator-button'><img className='hovering-arrow-navigator' src={RightArrow} alt='right-arrow'/></button>)}
+        {(clicks !== carData.length - 1) && (<button onClick={() => scrollToNextElement()} className='cars-carousel-cards-navigator-button'><img className='hovering-arrow-navigator' src={RightArrow} alt='right-arrow'/></button>)}
       </div>
       <div className='cars-carousel-data'>
         <div className='cars-carousel-filters'>
-          {filterType.length > 2 && bodyDesign.map((item) => <div onClick={() => setFilterType(item)} className={`cars-carousel-filters-buttons ${item === filterType ? 'selected' : ''}`}>{item}</div>)}
+          {bodyDesign.length > 2 && bodyDesign.map((item) => <div onClick={() => setFilterType(item)} className={`cars-carousel-filters-buttons ${item === filterType ? 'selected' : ''}`}>{item}</div>)}
         </div>
         <div className='cars-carousel-cards snaps-inline-carousel' ref={containerRef}>
           <div className='card-carousel-card-padder'/>
           {carData.map((car) => <CarsCarouselCard key={car.name} carData={car} index={clicks}/>)}
           <div className='card-carousel-card-padder'/>
         </div>
-        {indexes.length > 1 && (<div className='cars-carousel-indexes'>
-          {indexes.map((item) => clicks !== item.index ? (<div key={item.index} className='cars-carousel-indexes-pointers' onClick={() => {scrollToElement(item.index)}}><div className='inactive-pointer'/></div>) : (<div className='cars-carousel-indexes-pointers'><div className='active-pointer'/></div>))}
-        </div>)}
+        {indexes.length > 1 && (<div className='cars-carousel-indexes'>{indexes.map((item) => clicks !== item.index ? (<div key={item.index} className='cars-carousel-indexes-pointers' onClick={() => {scrollToElement(item.index)}}><div className='inactive-pointer'/></div>) : (<div className='cars-carousel-indexes-pointers'><div className='active-pointer'/></div>))}</div>)}
       </div>
     </div>
   )
