@@ -28,6 +28,7 @@
 }
 
 .cars-carousel-filters-buttons{
+    cursor: pointer;
     padding: 0;
     font-family: 'PorscheNext Regular';
     font-size: 18px;
@@ -40,12 +41,13 @@
 
 .selected{
     font-family: 'PorscheNext SemiBold';
-    font-size: 19px;
+    border: none;
+    pointer-events: none;
+    font-size: 18px;
     border-bottom: 2px solid #d5001c;
 }
 
 .cars-carousel-filters-buttons:hover{
-    cursor: pointer;
     border: none;
     background: none;
     color: #d5001c;
@@ -66,7 +68,7 @@
     align-items: center;
 }
 
-.cars-carousel-cards-navigator button{
+.cars-carousel-cards-navigator-button{
     z-index: 11 !important;
     box-shadow: 8px 4px 16px 0 rgba(0,0,0,.3);
     border: none;
@@ -77,7 +79,22 @@
     align-items: center;
 }
 
-.cars-carousel-cards-navigator button img{
+.cars-carousel-cards-navigator-button:hover{
+    z-index: 11 !important;
+    box-shadow: 8px 4px 16px 0 rgba(0,0,0,.3);
+    border: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5001c;
+    .hovering-arrow-navigator{
+        filter: invert();
+    }
+}
+
+.hovering-arrow-navigator{
     height: 16px;
     width: 16px;
 }
@@ -85,6 +102,9 @@
 .cars-carousel-indexes {
     display: flex;
     align-self: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .card-carousel-card-padder{
@@ -92,9 +112,28 @@
 }
 
 .snaps-inline-carousel{
-    scroll-snap-type: inline mandatory;
+    scroll-snap-type: x mandatory;
 }
 
 .snaps-inline-carousel > * {
     scroll-snap-align: middle;
+}
+
+.cars-carousel-indexes-pointers{
+    border: 2px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.active-pointer{
+    object-position: center center;
+    padding: 4px;
+    border-radius: 4px;
+    background: red;
+}
+
+.inactive-pointer{
+    padding: 4px;
+    border-radius: 4px;
+    background: #313639;
 }

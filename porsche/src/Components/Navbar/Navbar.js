@@ -6,8 +6,10 @@ import LogoImage from '../../Assets/Images/logo-image.png'
 import openMenuStore from '../../Stores/OpenMenuStore'
 import BackButton from '../../Assets/Images/Buttons/cross.png'
 import OpenMenu from './OpenMenu/OpenMenu'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+    const navigate = useNavigate()
     const {openMenu, toggleOpenMenu} = openMenuStore((state) => {
         return {openMenu: state.openMenu,toggleOpenMenu: state.toggleOpenMenu}
     })
@@ -26,8 +28,8 @@ const Navbar = () => {
         <div className='nav-bar'>
             <Menu />
             {screenWidth >= 760 ? 
-                (<img src={LogoText} alt='logo' className='logo'/>) :
-                (<img src={LogoImage} alt='logo' className='logo-small'/>)
+                (<img src={LogoText} alt='logo' className='logo'onClick={() => {navigate('..')}}/>) :
+                (<img src={LogoImage} alt='logo' className='logo-small'onClick={() => {navigate('..')}}/>)
             }
             <div className='empty' />
         </div>

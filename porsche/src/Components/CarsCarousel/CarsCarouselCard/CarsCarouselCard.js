@@ -4,6 +4,7 @@ import CarsCarouselCardButton from './CarsCarouselCardButton/CarsCarouselCardBut
 import HorizontalSpacer from '../../HorizontalSpacer'
 
 const CarsCarouselCard = ({carData,index}) => {
+  const floatValue = '.0'
   return (
     <div className='cars-carousel-card'>
       {index === carData.index ? (<><p className='cars-carousel-card-name'>{carData.name}</p>
@@ -16,7 +17,7 @@ const CarsCarouselCard = ({carData,index}) => {
             <div className='cars-carousel-card-car-data-attribute'>Power (kW)/Power (PS)</div>
           </div>
           <div className='cars-carousel-card-car-data-block'>
-            <div className='cars-carousel-card-car-data-value'>{parseFloat(carData.acceleration)} s</div>
+            <div className='cars-carousel-card-car-data-value'>{carData.acceleration}{Math.ceil(carData.acceleration)===Math.floor(carData.acceleration) && floatValue} s</div>
             <div className='cars-carousel-card-car-data-attribute'>Acceleration 0 - 100 km/h</div>
           </div>
           <div className='cars-carousel-card-car-data-block'>
