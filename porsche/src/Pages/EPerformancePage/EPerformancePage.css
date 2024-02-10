@@ -1,0 +1,149 @@
+.eperformace-page{
+    width: 100%;
+    overflow: hidden;
+}
+
+.eperformance-page-landing{
+    position: relative;
+}
+
+.eperformance-page-landing-foreground{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    font-family: 'PorscheNext Semibold';
+    color: #fff;
+}
+
+.e-performance-nav{
+    height: 60px;
+    width: 100%;
+    box-shadow: 2px 2px 6px 0 rgba(0,0,0,.2);
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 11 !important;
+    background-color: #fff;
+}
+
+.e-performance-nav-buttons{
+    border-bottom: 2px solid #fff;
+}
+
+.e-performance-nav-buttons:hover{
+    cursor: pointer;
+    color: #d5001c;
+}
+
+.eperformance-models-upper{
+    padding: 30px 0;
+    width: 86%;
+    font-size: 20px;
+    font-family: 'PorscheNext SemiBold';
+}
+
+.eperformance-models-upper p{
+    width: 64%;
+}
+
+.eperformance-models-lower{
+    width: 100%;
+    display: flex;
+}
+
+.eperformance-models-lower-image{
+    width: 71%;
+}
+
+.eperformance-models-lower-image img{
+    width: 100%;
+}
+
+.eperformance-models-lower-textarea{
+    width: 40%;
+    background-color: #eff0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eperformance-models-button{
+    cursor: pointer;
+    font-family: 'PorscheNext Regular';
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.eperformance-models-button:hover{
+    border: 1px solid #d5001c;
+    color: #d5001c;
+
+}
+
+.eperformance-models-button img{
+    height: 14px;
+    width: 8px;
+}
+
+.charging-data{
+    position: absolute;
+    top: 0;
+}
+
+.active-eperformance-nav{
+    border-bottom: 2px solid #d5001c;
+}
+
+.faq-card{
+    width: 100%;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.arrow-up{
+    height: 16px;
+    width: 9px;
+    rotate: 270deg;
+}
+
+.arrow-down{
+    height: 16px;
+    width: 9px;
+    rotate: 90deg;
+}
+
+.eperformance-models-button-white{
+    cursor: pointer;
+    width: fit-content;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'PorscheNext Regular';
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.eperformance-models-button-white:hover{
+    border: 1px solid #d5001c;
+    color: #d5001c;
+}
+
+.eperformance-models-button-white-img{
+    height: 14px;
+    width: 8px;
+    filter: invert();
+}
+
+.eperformance-models-button-white-img-hover{
+    height: 14px;
+    width: 8px;
+}

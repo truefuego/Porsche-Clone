@@ -1,3 +1,4 @@
 .car-page{
-    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 1000vh;
 }

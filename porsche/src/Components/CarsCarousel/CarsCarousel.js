@@ -1,19 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'
 import './CarsCarousel.css'
 import Carousel_Background from '../../Assets/Images/carousel-background.png'
-import { Cars } from '../../Stores/Cars';
-import CarsCarouselCard from './CarsCarouselCard/CarsCarouselCard';
+import { Cars } from '../../Stores/Cars'
+import CarsCarouselCard from './CarsCarouselCard/CarsCarouselCard'
 import LeftArrow from '../../Assets/Images/Navigation/Left.png'
 import RightArrow from '../../Assets/Images/Navigation/Right.png'
-import { HeaderUrlMaps, ModelUrlMaps } from '../../Stores/UrlMaps';
-import LeftArrowWhite from '../../Assets/Images/Buttons/link-arrow-white-left.png'
-import RightArrowWhite from '../../Assets/Images/Buttons/link-arrow-white.png'
+import { HeaderUrlMaps, ModelUrlMaps } from '../../Stores/UrlMaps'
 
 const CarsCarousel = () => {
   const { modelName, modelHeader } = useParams();
   const [carData,setCarData] = useState([]);
-  const [originalCarData,setOriginalCarData] = useState([]);
   const [bodyDesign,setBodyDesign] = useState(['All']);
   const [filterType,setFilterType] = useState('All');
 
@@ -21,9 +18,6 @@ const CarsCarousel = () => {
 
   const containerRef = useRef(null);
   const [clicks,setClicks] = useState(0)
-
-  const [hoveringLeft,setHoveringLeft] = useState(false)
-  const [hoveringRight,setHoveringRight] = useState(false)
 
   function scrollToNextElement() {
     const container = containerRef.current;
@@ -73,7 +67,6 @@ const CarsCarousel = () => {
     scrollToElement(-clicks)
     setClicks(0)
     setBodyDesign(tempBodyDesign)
-    setOriginalCarData(tempCarsData)
     let tempFilteredCarsData = tempCarsData
     if(filterType !== 'All') {
       tempFilteredCarsData = tempCarsData.filter((item) => item.body_design === filterType)

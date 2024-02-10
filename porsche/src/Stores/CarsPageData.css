@@ -1,0 +1,93 @@
+.cars-page-data{
+    overflow: hidden;
+}
+
+.sticky-nav {
+    display: flex;
+    padding: 0 108px;
+    align-items: center;
+    height: 60px !important;
+    gap: 48px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 2px rgba(0,0,0,.15);
+}
+
+.sticky-nav-button {
+    color: #000;
+    cursor: pointer;
+    max-width: 100%;
+    margin: 0;
+    font-family: 'PorscheNext Regular';
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.sticky-nav-button:hover{
+    color: #d5001c;
+}
+
+.sticky-nav.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 11 !important;
+    background-color: #fff;
+}
+
+/* CONCEPT COMPONENT */
+
+.concept-component{
+    height: 548px;
+    width: 100%;
+    display: flex;
+
+}
+
+.concept-component-text-area{
+    width: 36%;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 110px;
+    height: 100%;
+}
+
+.concept-component-heading{
+    font-size: 40px;
+    font-family: 'PorscheNext SemiBold';
+
+}
+
+.concept-component-text{
+    font-size: 18px;
+    font-family: 'PorscheNext regular';
+}
+
+
+/*  DESIGN COMPONENT  */
+
+.parallax-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.parallax-foreground{
+    width: 100%;
+    height: 100vh;
+    z-index: 3 !important;
+    background-color: #d5001c;
+}
+
+.parallax-background{
+    z-index: -1 !important;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax-background.sticky{
+    top:0;
+    position: fixed;
+    top: 0;
+    z-index: 2 !important;
+}

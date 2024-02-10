@@ -1,0 +1,39 @@
+.more-about{
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+}
+
+.more-about-header{
+    font-family: 'PorscheNext SemiBold';
+    font-size: 42px;
+    padding: 24px 0;
+}
+
+.more-about-list{
+    display: flex;
+}
+
+.more-about-list-item{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: 'PorscheNext Regular';
+    padding-right: 12px;
+    font-size: 16px;
+}
+
+.more-about-list-item img{
+    height: 12px;
+    padding: 0 6px;
+}
+
+.more-about-list-item:hover{
+    color: #d5001c;
+}
+
+.more-about-list-item-separator{
+    width: 1px;
+    padding-left: 12px;
+    border-left: 1px solid #babbbc;
+}

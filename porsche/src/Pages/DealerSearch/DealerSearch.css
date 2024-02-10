@@ -1,0 +1,77 @@
+.dealer-search{
+    overflow: hidden;
+}
+
+.porsche-dealer-search{
+    width: 86%;
+    font-family: 'PorscheNext SemiBold';
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.dealer-search-map{
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+.dealer-search-map-background{
+    position: relative;
+}
+
+.dealer-search-map-foreground{
+    top: 54px;
+    left: 108px;
+    position: absolute;
+}
+
+.dealer-search-find-location-box{
+    height: 188px;
+    width: 428px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.search-location-box-header{
+    margin: 20px;
+    height: 54px;
+    margin-bottom: 0;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+}
+
+.search-location-box-header:hover{
+    border: 1px solid #d5001c;
+    color: #d5001c;
+}
+
+.search-location-box-header img{
+    height: 14px;
+}
+.search-location-box-header p{
+    font-family: 'PorscheNext Regular';
+    margin-bottom: 0 !important;
+}
+
+.search-address{
+    padding: 20px;
+    padding-top: 0;
+    font-family: 'PorscheNext Regular';
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-address input{
+    height: 93%;
+    width: 100%;
+    border-radius: 0;
+}

@@ -62,12 +62,7 @@ const ModelStartPage = () => {
                     <div className='model-start-navigator' onMouseEnter={() => setHovering(!hovering)} onMouseLeave={() => setHovering(!hovering)}>
                         <img src={hovering ? Navigation_Menu_Hamburger_Red : Navigation_Menu_Hamburger_White} alt='hamburger'/>
                     </div>
-                    <div className='porsche-car-configurator-drop-down-content'>
-                        <p>hi</p>
-                        <p>hi</p>
-                        <p>hi</p>
-                        <p>hi</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>

@@ -45,10 +45,14 @@
 }
 
 .porsche-car-configurator-drop-down-content{
-    position: absolute;
     display: none;
 }
 
+.show-dropdown{
+    position: absolute;
+    display: flex;
+
+}
 .model-start-more-about{
     display: flex;
     width: 86%;
