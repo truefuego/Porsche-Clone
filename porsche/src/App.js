@@ -7,6 +7,7 @@ import CarPage from './Pages/CarPage/CarPage';
 import Problem from './Components/Problem';
 import DealerSearch from './Pages/DealerSearch/DealerSearch';
 import EPerformancePage from './Pages/EPerformancePage/EPerformancePage';
+import ContactPage from './Pages/ContactPage/ContactPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/models/:modelName/:modelHeader' element={<CarPage />}/>
       <Route path='/dealersearch' element={<DealerSearch />} />
       <Route path='/aboutporsche/e-performance' element={<EPerformancePage />} />
+      <Route path='/aboutporsche/importers/contactform/' element={<ContactPage />} />
     </Routes>
   );
 }

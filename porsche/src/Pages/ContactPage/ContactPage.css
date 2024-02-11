@@ -1,0 +1,124 @@
+.registration-navigator{
+    width: 86%;
+    font-family: 'PorscheNext Regular';
+}
+
+.registration-navigator-header{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 26px;
+    font-family: 'PorscheNext SemiBold';
+}
+
+.registration-nav-navigator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #950014;
+    cursor: pointer;
+}
+
+.registration-nav-navigator:hover{
+    background-color: #313639;
+}
+
+.registration-navigator img{
+    scale: .8;
+}
+
+.registration-navigator-drop-down{
+    position: relative;
+    display: inline-block;
+}
+
+.registration-navigator-drop-down-content{
+    display: none;
+}
+
+.show-dropdown{
+    position: absolute;
+    display: flex;
+
+}
+
+.sticky-nav-registration{
+    position: fixed;
+    z-index: 12 !important;
+    top: 0;
+    background-color: #eff0f1;
+}
+
+
+.contact-page-drop-up{
+    position: relative;
+    cursor: pointer;
+}
+
+.contact-page-drop-up-controller{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact-page-drop-up-image{
+    rotate: 90deg;
+    margin: 10px;
+    width: 8px;
+    height: 12px;
+}
+
+.contact-page-drop-up-text{
+    margin: 10px;
+}
+
+.contact-page-drop-up-content{
+    box-shadow: 2px -2px 4px 0 rgba(0,0,0,.2);
+    font-family: 'PorscheNext Thin';
+    overflow-y: scroll;
+    font-size: 17px;
+    max-height: 200px;
+    width: 100%;
+    bottom: 52px;
+    gap: 16px;
+    background-color: #fff;
+    z-index: 111;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page-input-box{
+
+}
+
+
+.contact-page-input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    font-family: 'PorscheNext Regular';
+    font-size: 16px;
+    color: rgb(107, 109, 112);
+    border: 1px solid #c8cacb !important;
+    border-radius: 0px;
+}
+
+.contact-page-input-box input{
+    width: 80%;
+    background-color: transparent;
+    margin: 10px;
+    border: none;
+}
+
+.contact-page-input-box input:focus{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
