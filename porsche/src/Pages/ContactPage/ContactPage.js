@@ -57,9 +57,11 @@ const ContactPage = () => {
 
     const [salutation,setSalutation] = useState('- - -')
     const [academicTitle,setAcademicTitle] = useState('- - -')
+    const [nobleTitle,setNobleTitle] = useState('- - -')
 
     const [selectSalutation,setSelectSalutaion] = useState(false)
     const [selectAcademicTitle,setSelectAcademicTitle] = useState(false)
+    const [selectNobleTitle,setSelectNobleTitle] = useState(false)
 
     const [vehicle,setVehicle] = useState('- - -')
     const [model,setModel] = useState('- - -')
@@ -138,12 +140,12 @@ const ContactPage = () => {
                             <div style={{width: '50%'}}>
                                 <p style={{fontFamily: 'PorscheNext Regular',fontSize: '16px',paddingTop: '8px',marginBottom:'0'}}>Noble Title</p>
                                 <div className='contact-page-drop-up'>
-                                    <div className='region-selector contact-page-drop-up-controller' onClick={() => setSelectSalutaion(!selectSalutation)}>
-                                        <p className='contact-page-drop-up-text'>{salutation}</p>
+                                    <div className='region-selector contact-page-drop-up-controller' onClick={() => setSelectNobleTitle(!selectNobleTitle)}>
+                                        <p className='contact-page-drop-up-text'>{nobleTitle}</p>
                                         <img className='contact-page-drop-up-image' src={Drop_Up_Image} alt='link'/>
                                     </div>
                                     <div className='contact-page-drop-up-content'>
-                                        {selectSalutation && SalutationList.map((item) => <p key={item} className='region-selector-option' onClick={() => {setSalutation(item);setSelectSalutaion(!selectSalutation)}}>{item}</p>)}
+                                        {selectNobleTitle && NobleTitleList.map((item) => <p key={item} className='region-selector-option' onClick={() => {setNobleTitle(item);setSelectNobleTitle(!selectNobleTitle)}}>{item}</p>)}
                                     </div>
                                 </div>
                             </div>
