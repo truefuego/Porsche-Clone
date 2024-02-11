@@ -1,11 +1,13 @@
 .button-filled{
     background: #fff;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
 .button-filled-image{
+    cursor: pointer;
     margin-left: 20px;
     width: 12px;
     height: 12px;
@@ -13,6 +15,7 @@
 
 .button-filled-text{
     margin-top: 18px;
+    cursor: pointer;
     padding-right: 18px;
     font-family: 'PorscheNext Regular';
     font-size: 16px;

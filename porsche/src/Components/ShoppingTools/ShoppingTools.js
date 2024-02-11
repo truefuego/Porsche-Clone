@@ -11,25 +11,29 @@ const shoppingToolsList = [
         id: 0,
         name: 'Compare',
         image: Compare,
-        width: 2
+        width: 2,
+        link: `/models`
     },
     {
         id: 1,
         name: 'Locate a dealer',
         image: LocateADealer,
-        width: 1
+        width: 1,
+        link: `/dealersearch/`
     },
     {
         id: 2,
         name: 'Porsche Lifestyle',
         image: PorscheLifestyle,
-        width: 1
+        width: 1,
+        link: '/not-complete-yet'
     },
     {
         id: 3,
         name: 'Contact Us',
         image: ContactUs,
-        width: 1
+        width: 1,
+        link: '/aboutporsche/importers/contactform/'
     },
 ]
 

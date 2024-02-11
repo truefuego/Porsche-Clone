@@ -111,15 +111,15 @@ const Porsche718Models = () => {
 
 export const CarsPageData = {
     '718-models': <Porsche718Models />,
-    '718-cayman-gt4-rs': {},
-    '911-models': {},
-    '911-turbo-models': {},
-    '911-gt3-models': {},
-    '911-gt3-rs': {},
-    '911-st': {},
-    'taycan-models': {},
-    'panamera-models': {},
-    'macan-models': {},
-    'cayenne-models': {},
-    'cayenne-coupe-models': {}
+    '718-cayman-gt4-rs': <></>,
+    '911-models': <></>,
+    '911-turbo-models': <></>,
+    '911-gt3-models': <></>,
+    '911-gt3-rs': <></>,
+    '911-st': <></>,
+    'taycan-models': <></>,
+    'panamera-models': <></>,
+    'macan-models': <></>,
+    'cayenne-models': <></>,
+    'cayenne-coupe-models': <></>
 }

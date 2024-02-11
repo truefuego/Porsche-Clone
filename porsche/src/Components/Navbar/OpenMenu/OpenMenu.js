@@ -9,8 +9,10 @@ import PorscheTaycan from './Images/taycan.webp'
 import PorschePanamera from './Images/panamera.webp'
 import PorscheMacan from './Images/macan.webp'
 import PorscheCayenne from './Images/cayenne.webp'
+import { useNavigate } from 'react-router-dom'
 
 const OpenMenu = () => {
+    const navigate = useNavigate()
     const [clicked,setClicked] = useState('Models')
   return (
     <div className='open-menu'>
@@ -39,42 +41,42 @@ const OpenMenu = () => {
         <div className='open-menu-right-area'>
             {clicked === 'Models' && (
                 <div className='open-menu-right-content'>
-                    <img className='open-menu-right-content-image' src={Porsche718} alt='Porsche718'/>
-                    <img className='open-menu-right-content-image' src={Porsche911} alt='Porsche911'/>
-                    <img className='open-menu-right-content-image' src={PorscheTaycan} alt='PorscheTaycan'/>
-                    <img className='open-menu-right-content-image' src={PorschePanamera} alt='PorschePanamera'/>
-                    <img className='open-menu-right-content-image' src={PorscheMacan} alt='PorscheMacan'/>
-                    <img className='open-menu-right-content-image' src={PorscheCayenne} alt='PorscheCayenne'/>
+                    <img className='open-menu-right-content-image' src={Porsche718} alt='Porsche718' onClick={() => navigate('/models/718/718-models')}/>
+                    <img className='open-menu-right-content-image' src={Porsche911} alt='Porsche911' onClick={() => navigate('/models/911/911-models')}/>
+                    <img className='open-menu-right-content-image' src={PorscheTaycan} alt='PorscheTaycan' onClick={() => navigate('/models/taycan/taycan-models')}/>
+                    <img className='open-menu-right-content-image' src={PorschePanamera} alt='PorschePanamera' onClick={() => navigate('/models/panamera/panamera-models')}/>
+                    <img className='open-menu-right-content-image' src={PorscheMacan} alt='PorscheMacan' onClick={() => navigate('/models/macan/macan-models')}/>
+                    <img className='open-menu-right-content-image' src={PorscheCayenne} alt='PorscheCayenne' onClick={() => navigate('/models/cayenne/cayenne-models')}/>
                 </div>
             )}
             {clicked === 'Vehicle Purchase' && (
                 <div className='open-menu-right-content-text-area'>
-                    <p className='open-menu-right-content-text'>Configure</p>
-                    <p className='open-menu-right-content-text'>Compare Models</p>
-                    <p className='open-menu-right-content-text'>Find New and Pre-owned Vehicles</p>
-                    <p className='open-menu-right-content-text'>Saved Vehicles</p>
-                    <p className='open-menu-right-content-text'>E-Mobility & E-Performance</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('/model-start')}>Configure</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('/models')}>Compare Models</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Find New and Pre-owned Vehicles</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Saved Vehicles</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('/aboutporsche/e-performance/')}>E-Mobility & E-Performance</p>
                 </div>
             )}
             {clicked === 'Services' && (
                 <div className='open-menu-right-content-text-area'>
-                    <p className='open-menu-right-content-text'>Factory Delivery</p>
-                    <p className='open-menu-right-content-text'>Tequipment - Genuine Accesories</p>
-                    <p className='open-menu-right-content-text'>Exclusive Manufaktur - Individual Vehicles</p>
-                    <p className='open-menu-right-content-text'>Approved - Pre-owned Cars & Warranty</p>
-                    <p className='open-menu-right-content-text'>Service & Maintenance</p>
-                    <p className='open-menu-right-content-text'>Classic - Service & Parts</p>
-                    <p className='open-menu-right-content-text'>Lifestyle - Fashion & Accessories</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Factory Delivery</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Tequipment - Genuine Accesories</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Exclusive Manufaktur - Individual Vehicles</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Approved - Pre-owned Cars & Warranty</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Service & Maintenance</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Classic - Service & Parts</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Lifestyle - Fashion & Accessories</p>
                 </div>
             )}
             {clicked === 'Experience' && (
                 <div className='open-menu-right-content-text-area'>
-                    <p className='open-menu-right-content-text'>Motorsport</p>
-                    <p className='open-menu-right-content-text'>Porsche Experience - Driving & Track Experience</p>
-                    <p className='open-menu-right-content-text'>Porsche Clubs</p>
-                    <p className='open-menu-right-content-text'>Golf</p>
-                    <p className='open-menu-right-content-text'>Christophorus - The Porsche Magazine</p>
-                    <p className='open-menu-right-content-text'>Porsche Museum</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Motorsport</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Porsche Experience - Driving & Track Experience</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Porsche Clubs</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Golf</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Christophorus - The Porsche Magazine</p>
+                    <p className='open-menu-right-content-text' onClick={() => navigate('')}>Porsche Museum</p>
                 </div>
             )}
             {clicked === 'Find a Dealer' && (

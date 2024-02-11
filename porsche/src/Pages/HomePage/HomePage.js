@@ -13,14 +13,12 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      
       <Carousel />  
       <Models />
       <CarModelsList />
       <ShoppingTools />
       <PorscheSocial />
       <Discover />
-
       <Footer />
     </>
   )
